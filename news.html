@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News | The Daily Lens</title>
+
+  <meta name="description" content="Latest news, important updates and stories from The Daily Lens.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #ef4444,
+        #f97316,
+        #8b5cf6,
+        #2563eb
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #7c3aed,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #2563eb,
+        #0891b2
+      );
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 17px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ef4444;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .page-heading {
+      background: linear-gradient(
+        135deg,
+        #fee2e2,
+        #fff7ed,
+        #f5f3ff
+      );
+      padding: 40px;
+      border-radius: 22px;
+      margin-bottom: 35px;
+      border-left: 7px solid #ef4444;
+    }
+
+    .page-heading h1 {
+      font-size: 40px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .page-heading p {
+      color: #64748b;
+      font-size: 17px;
+      max-width: 750px;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 27px;
+      color: #111827;
+    }
+
+    .title-line {
+      display: flex;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .title-line span {
+      height: 5px;
+      border-radius: 10px;
+    }
+
+    .one {
+      width: 45px;
+      background: #ef4444;
+    }
+
+    .two {
+      width: 30px;
+      background: #f97316;
+    }
+
+    .three {
+      width: 20px;
+      background: #7c3aed;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 7px 22px rgba(15, 23, 42, 0.07);
+      transition: 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+    }
+
+    .news-image {
+      height: 170px;
+      background: linear-gradient(
+        135deg,
+        #ef4444,
+        #f97316,
+        #7c3aed
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+    }
+
+    .news-content {
+      padding: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fee2e2;
+      color: #dc2626;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .news-content h3 {
+      font-size: 22px;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .read-link {
+      color: #ef4444;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .read-link:hover {
+      color: #7c3aed;
+    }
+
+    .notice {
+      margin-top: 35px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 25px;
+      border-radius: 15px;
+      color: #1e40af;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #111827;
+      color: white;
+      padding: 35px 20px 20px;
+      border-top: 6px solid #ef4444;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: 25px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .page-heading h1 {
+        font-size: 32px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    📰 <span>The Daily Lens</span> — News, Ideas and Stories That Matter
+  </div>
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="logo-icon">
+          DL
+        </div>
+
+        <div>
+
+          <div class="logo">
+            The Daily Lens
+          </div>
+
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html" class="active">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="container">
+
+
+    <section class="page-heading">
+
+      <h1>
+        📰 News
+      </h1>
+
+      <p>
+        Stay informed with important developments, useful
+        information and stories that matter to our communities.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <div class="section-title">
+
+        <h2>
+          Latest Stories
+        </h2>
+
+        <div class="title-line">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+
+      </div>
+
+
+      <div class="news-grid">
+
+
+        <article class="news-card">
+
+          <div class="news-image">
+            📰
+          </div>
+
+          <div class="news-content">
+
+            <span class="badge">
+              NEWS
+            </span>
+
+            <h3>
+              Why Reliable Information Matters in the Digital Age
+            </h3>
+
+            <p>
+              In a world where information travels quickly,
+              knowing how to identify reliable information
+              has become more important than ever.
+            </p>
+
+            <a href="#" class="read-link">
+              Read Article →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image">
+            🌍
+          </div>
+
+          <div class="news-content">
+
+            <span class="badge">
+              COMMUNITY
+            </span>
+
+            <h3>
+              The Importance of Strong and Connected Communities
+            </h3>
+
+            <p>
+              Communities become stronger when people share
+              knowledge, support one another and work together
+              toward common goals.
+            </p>
+
+            <a href="#" class="read-link">
+              Read Article →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image">
+            💡
+          </div>
+
+          <div class="news-content">
+
+            <span class="badge">
+              INSIGHT
+            </span>
+
+            <h3>
+              How Technology Is Changing Everyday Life
+            </h3>
+
+            <p>
+              From communication to education and business,
+              technology continues to change how people
+              interact with the world.
+            </p>
+
+            <a href="#" class="read-link">
+              Read Article →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image">
+            🤝
+          </div>
+
+          <div class="news-content">
+
+            <span class="badge">
+              SOCIETY
+            </span>
+
+            <h3>
+              Why Respect and Understanding Matter
+            </h3>
+
+            <p>
+              Respecting different perspectives can help
+              communities communicate better and build
+              peaceful relationships.
+            </p>
+
+            <a href="#" class="read-link">
+              Read Article →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <div class="notice">
+
+      <strong>Welcome to The Daily Lens News.</strong>
+
+      This section will grow as we publish original stories,
+      useful reports and carefully researched news.
+      We will build it gradually so that every article
+      has value for our readers.
+
+    </div>
+
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Religion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Business
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 The Daily Lens. All rights reserved.
+
+    </div>
+
+  </footer>
+
+</body>
+          </html>
