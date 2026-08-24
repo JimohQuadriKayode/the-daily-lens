@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>The Daily Lens | News, Ideas and Stories That Matter</title>
+  <title>Religion | The Daily Lens</title>
 
-  <meta name="description" content="The Daily Lens brings you news, sports, religion, education, technology, business, lifestyle and thoughtful opinions.">
+  <meta name="description" content="Religion, faith, knowledge, community stories and thoughtful discussions from The Daily Lens.">
 
   <style>
 
@@ -27,7 +27,7 @@
       line-height: 1.6;
     }
 
-    /* RAINBOW TOP LINE */
+    /* TOP COLOUR BAR */
 
     .rainbow {
       height: 7px;
@@ -87,9 +87,8 @@
       border-radius: 16px;
       background: linear-gradient(
         135deg,
-        #ef4444,
-        #f97316,
-        #8b5cf6,
+        #7c3aed,
+        #a855f7,
         #2563eb
       );
       color: white;
@@ -98,7 +97,7 @@
       justify-content: center;
       font-size: 25px;
       font-weight: 900;
-      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
     }
 
     .logo {
@@ -106,9 +105,8 @@
       font-weight: 900;
       background: linear-gradient(
         90deg,
-        #ef4444,
-        #f97316,
         #7c3aed,
+        #a855f7,
         #2563eb
       );
       -webkit-background-clip: text;
@@ -122,13 +120,13 @@
     }
 
     .header-message {
-      background: #fff7ed;
-      color: #c2410c;
+      background: #f5f3ff;
+      color: #6d28d9;
       padding: 10px 15px;
       border-radius: 30px;
       font-size: 13px;
       font-weight: bold;
-      border: 1px solid #fed7aa;
+      border: 1px solid #ddd6fe;
     }
 
     /* NAVIGATION */
@@ -136,11 +134,12 @@
     nav {
       background: linear-gradient(
         90deg,
+        #581c87,
         #7c3aed,
         #2563eb,
         #0891b2
       );
-      box-shadow: 0 5px 18px rgba(37, 99, 235, 0.2);
+      box-shadow: 0 5px 18px rgba(124, 58, 237, 0.2);
       overflow-x: auto;
     }
 
@@ -179,36 +178,33 @@
       padding: 0 20px;
     }
 
-    /* WELCOME */
+    /* PAGE INTRO */
 
-    .welcome {
+    .page-intro {
       background:
         linear-gradient(
           135deg,
-          rgba(239, 68, 68, 0.08),
-          rgba(124, 58, 237, 0.08),
-          rgba(6, 182, 212, 0.08)
+          rgba(124, 58, 237, 0.12),
+          rgba(168, 85, 247, 0.10),
+          rgba(37, 99, 235, 0.10)
         );
       padding: 40px;
       border-radius: 22px;
       margin-bottom: 35px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
+      border-left: 7px solid #7c3aed;
     }
 
-    .welcome h1 {
+    .page-intro h1 {
       font-size: 42px;
       color: #111827;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .welcome h1 span {
+    .page-intro h1 span {
       background: linear-gradient(
         90deg,
-        #ef4444,
-        #f97316,
         #7c3aed,
+        #a855f7,
         #2563eb
       );
       -webkit-background-clip: text;
@@ -216,8 +212,8 @@
       background-clip: text;
     }
 
-    .welcome p {
-      max-width: 780px;
+    .page-intro p {
+      max-width: 800px;
       color: #475569;
       font-size: 17px;
     }
@@ -229,7 +225,7 @@
     }
 
     .section-title h2 {
-      font-size: 28px;
+      font-size: 29px;
       color: #111827;
     }
 
@@ -252,7 +248,7 @@
 
     .line-one {
       width: 40px;
-      background: #ef4444;
+      background: #7c3aed;
     }
 
     .line-two {
@@ -262,33 +258,30 @@
 
     .line-three {
       width: 20px;
-      background: #7c3aed;
+      background: #2563eb;
     }
 
     /* FEATURED */
 
     .featured {
-      min-height: 310px;
+      min-height: 300px;
       padding: 45px;
       border-radius: 25px;
       margin-bottom: 40px;
       color: white;
-      position: relative;
-      overflow: hidden;
       background:
         linear-gradient(
           120deg,
-          #be123c,
-          #7c3aed 48%,
-          #2563eb
+          #581c87,
+          #7c3aed 45%,
+          #2563eb,
+          #0891b2
         );
-      box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+      box-shadow: 0 15px 35px rgba(109, 40, 217, 0.25);
     }
 
     .featured-content {
-      max-width: 780px;
-      position: relative;
-      z-index: 2;
+      max-width: 800px;
     }
 
     .featured-label {
@@ -305,7 +298,7 @@
     .featured h2 {
       font-size: 34px;
       line-height: 1.2;
-      margin-bottom: 13px;
+      margin-bottom: 14px;
     }
 
     .featured p {
@@ -322,7 +315,6 @@
       border-radius: 9px;
       text-decoration: none;
       font-weight: 900;
-      transition: 0.25s;
     }
 
     .read-button:hover {
@@ -330,16 +322,16 @@
       color: #713f12;
     }
 
-    /* STORY GRID */
+    /* RELIGION CARDS */
 
-    .stories-grid {
+    .religion-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
       margin-bottom: 45px;
     }
 
-    .story-card {
+    .religion-card {
       background: white;
       border-radius: 18px;
       overflow: hidden;
@@ -348,258 +340,117 @@
       transition: 0.3s;
     }
 
-    .story-card:hover {
+    .religion-card:hover {
       transform: translateY(-7px);
       box-shadow: 0 16px 30px rgba(15, 23, 42, 0.13);
     }
 
-    .card-top {
-      height: 95px;
+    .card-icon {
+      height: 105px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 42px;
       color: white;
+      font-size: 43px;
     }
 
-    .card-news {
-      background: linear-gradient(135deg, #ef4444, #f97316);
-    }
-
-    .card-sports {
-      background: linear-gradient(135deg, #16a34a, #22c55e);
-    }
-
-    .card-religion {
+    .faith {
       background: linear-gradient(135deg, #7c3aed, #a855f7);
     }
 
-    .card-education {
-      background: linear-gradient(135deg, #0891b2, #06b6d4);
+    .knowledge {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
     }
 
-    .card-technology {
-      background: linear-gradient(135deg, #2563eb, #4f46e5);
+    .community {
+      background: linear-gradient(135deg, #059669, #22c55e);
     }
 
-    .card-business {
-      background: linear-gradient(135deg, #059669, #16a34a);
+    .islam {
+      background: linear-gradient(135deg, #166534, #16a34a);
     }
 
-    .card-lifestyle {
-      background: linear-gradient(135deg, #db2777, #ec4899);
+    .christianity {
+      background: linear-gradient(135deg, #1d4ed8, #60a5fa);
     }
 
-    .card-opinion {
-      background: linear-gradient(135deg, #ea580c, #f59e0b);
+    .interfaith {
+      background: linear-gradient(135deg, #ea580c, #f97316);
     }
 
-    .story-content {
+    .card-content {
       padding: 24px;
     }
 
-    .category {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      color: white;
-      font-size: 11px;
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-
-    .news {
-      background: #ef4444;
-    }
-
-    .sports {
-      background: #16a34a;
-    }
-
-    .religion {
-      background: #7c3aed;
-    }
-
-    .education {
-      background: #0891b2;
-    }
-
-    .technology {
-      background: #2563eb;
-    }
-
-    .business {
-      background: #059669;
-    }
-
-    .lifestyle {
-      background: #db2777;
-    }
-
-    .opinion {
-      background: #ea580c;
-    }
-
-    .story-content h3 {
-      font-size: 20px;
+    .card-content h3 {
+      font-size: 21px;
       color: #111827;
       margin-bottom: 9px;
     }
 
-    .story-content p {
+    .card-content p {
       color: #64748b;
       font-size: 14px;
       margin-bottom: 18px;
     }
 
-    .article-link {
+    .card-link {
+      color: #7c3aed;
       text-decoration: none;
       font-weight: 900;
       font-size: 14px;
     }
 
-    .link-red {
-      color: #ef4444;
-    }
+    /* COMMUNITY MESSAGE */
 
-    .link-green {
-      color: #16a34a;
-    }
-
-    .link-purple {
-      color: #7c3aed;
-    }
-
-    .link-cyan {
-      color: #0891b2;
-    }
-
-    .link-blue {
-      color: #2563eb;
-    }
-
-    .link-darkgreen {
-      color: #059669;
-    }
-
-    .link-pink {
-      color: #db2777;
-    }
-
-    .link-orange {
-      color: #ea580c;
-    }
-
-    /* WHY SECTION */
-
-    .why-section {
+    .community-message {
       background: white;
-      padding: 40px;
       border-radius: 22px;
+      padding: 35px;
       margin-bottom: 40px;
       border: 1px solid #e5e7eb;
       text-align: center;
     }
 
-    .why-section h2 {
+    .community-message h2 {
       font-size: 29px;
       color: #111827;
+      margin-bottom: 10px;
     }
 
-    .why-section > p {
-      max-width: 700px;
-      margin: 8px auto 28px;
+    .community-message p {
+      max-width: 780px;
+      margin: auto;
       color: #64748b;
     }
 
-    .values {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .value {
+    .unity-box {
+      margin-top: 25px;
       padding: 25px;
       border-radius: 16px;
-    }
-
-    .value:nth-child(1) {
-      background: #fff1f2;
-      border: 1px solid #fecdd3;
-    }
-
-    .value:nth-child(2) {
-      background: #f5f3ff;
+      background: linear-gradient(
+        135deg,
+        #f5f3ff,
+        #eff6ff,
+        #ecfdf5
+      );
       border: 1px solid #ddd6fe;
     }
 
-    .value:nth-child(3) {
-      background: #ecfeff;
-      border: 1px solid #a5f3fc;
+    .unity-box strong {
+      color: #6d28d9;
+      font-size: 20px;
     }
 
-    .value-icon {
-      font-size: 34px;
-      margin-bottom: 8px;
-    }
+    /* NOTICE */
 
-    .value h3 {
-      margin-bottom: 6px;
-      color: #111827;
-    }
-
-    .value p {
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    /* NEWSLETTER */
-
-    .newsletter {
-      padding: 40px;
-      border-radius: 22px;
-      color: white;
-      text-align: center;
-      margin-bottom: 45px;
-      background:
-        linear-gradient(
-          110deg,
-          #0f766e,
-          #0891b2,
-          #2563eb,
-          #7c3aed
-        );
-    }
-
-    .newsletter h2 {
-      font-size: 29px;
-      margin-bottom: 7px;
-    }
-
-    .newsletter p {
-      color: #e0f2fe;
-      margin-bottom: 20px;
-    }
-
-    .newsletter input {
-      width: 55%;
-      max-width: 450px;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      font-size: 14px;
-    }
-
-    .newsletter button {
-      padding: 14px 22px;
-      border: none;
-      border-radius: 8px;
-      background: #f97316;
-      color: white;
-      font-weight: 900;
-      cursor: pointer;
-      margin-left: 5px;
+    .notice {
+      margin-bottom: 40px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      padding: 25px;
+      border-radius: 15px;
+      color: #9a3412;
     }
 
     /* FOOTER */
@@ -607,7 +458,7 @@
     footer {
       background: #111827;
       color: white;
-      border-top: 6px solid #f97316;
+      border-top: 6px solid #7c3aed;
     }
 
     .footer-inner {
@@ -672,7 +523,7 @@
         text-align: center;
       }
 
-      .welcome h1 {
+      .page-intro h1 {
         font-size: 32px;
       }
 
@@ -684,26 +535,12 @@
         font-size: 27px;
       }
 
-      .stories-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .values {
+      .religion-grid {
         grid-template-columns: 1fr;
       }
 
       .footer-inner {
         grid-template-columns: 1fr;
-      }
-
-      .newsletter input {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      .newsletter button {
-        width: 100%;
-        margin-left: 0;
       }
 
     }
@@ -716,8 +553,9 @@
   <div class="rainbow"></div>
 
   <div class="top-bar">
-    📰 <span>The Daily Lens</span> — News, Ideas and Stories That Matter
+    🕊️ <span>The Daily Lens</span> — Faith, Knowledge and Community
   </div>
+
 
   <header>
 
@@ -744,19 +582,20 @@
       </div>
 
       <div class="header-message">
-        🌍 Inform • Inspire • Connect
+        🌍 Respect • Learn • Understand
       </div>
 
     </div>
 
   </header>
 
+
   <nav>
 
     <ul>
 
       <li>
-        <a href="index.html" class="active">
+        <a href="index.html">
           Home
         </a>
       </li>
@@ -774,37 +613,37 @@
       </li>
 
       <li>
-        <a href="religion.html">
+        <a href="religion.html" class="active">
           Religion
         </a>
       </li>
 
       <li>
-        <a href="#education">
+        <a href="#">
           Education
         </a>
       </li>
 
       <li>
-        <a href="#technology">
+        <a href="#">
           Technology
         </a>
       </li>
 
       <li>
-        <a href="#business">
+        <a href="#">
           Business
         </a>
       </li>
 
       <li>
-        <a href="#lifestyle">
+        <a href="#">
           Lifestyle
         </a>
       </li>
 
       <li>
-        <a href="#opinion">
+        <a href="#">
           Opinion
         </a>
       </li>
@@ -813,34 +652,36 @@
 
   </nav>
 
+
   <main class="container">
 
-    <section class="welcome">
+
+    <section class="page-intro">
 
       <h1>
-        Welcome to
-        <span>The Daily Lens</span>
+        🕊️ <span>Religion</span>
       </h1>
 
       <p>
-        Your destination for news, sports, religion, education,
-        technology, business, lifestyle and thoughtful opinions.
-        We bring you useful information, important stories and
-        perspectives on issues that matter to our communities.
+        A space for faith, knowledge, reflection and community.
+        Explore religious ideas, educational resources,
+        community stories and thoughtful discussions that
+        encourage respect and understanding.
       </p>
 
     </section>
+
 
     <section>
 
       <div class="section-title">
 
         <h2>
-          Featured Story
+          Featured Religion Story
         </h2>
 
         <p>
-          Stories worth seeing through a different lens.
+          Stories and ideas that encourage faith, knowledge and understanding.
         </p>
 
         <div class="title-line">
@@ -850,6 +691,7 @@
         </div>
 
       </div>
+
 
       <div class="featured">
 
@@ -860,17 +702,17 @@
           </span>
 
           <h2>
-            Stories That Inform, Inspire and Connect Us
+            Faith Can Build Stronger and More Peaceful Communities
           </h2>
 
           <p>
-            The Daily Lens brings together important stories,
-            useful knowledge and different perspectives on the
-            issues that matter to our communities.
+            Religious communities can contribute positively to society
+            through knowledge, good character, compassion, service and
+            respect for people of different backgrounds.
           </p>
 
           <a href="#" class="read-button">
-            Read More →
+            Read Story →
           </a>
 
         </div>
@@ -879,16 +721,17 @@
 
     </section>
 
+
     <section>
 
       <div class="section-title">
 
         <h2>
-          Explore Our Sections
+          Explore Religion
         </h2>
 
         <p>
-          Discover stories from different parts of life.
+          Discover different areas of religious knowledge and community life.
         </p>
 
         <div class="title-line">
@@ -899,220 +742,29 @@
 
       </div>
 
-      <div class="stories-grid">
 
-        <!-- NEWS -->
+      <div class="religion-grid">
 
-        <article class="story-card" id="news">
 
-          <div class="card-top card-news">
-            📰
-          </div>
+        <article class="religion-card">
 
-          <div class="story-content">
-
-            <span class="category news">
-              NEWS
-            </span>
-
-            <h3>
-              Latest News and Important Updates
-            </h3>
-
-            <p>
-              Stay informed about important developments,
-              events and stories happening around you.
-            </p>
-
-            <a href="news.html" class="article-link link-red">
-              Explore News →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- SPORTS -->
-
-        <article class="story-card" id="sports">
-
-          <div class="card-top card-sports">
-            ⚽
-          </div>
-
-          <div class="story-content">
-
-            <span class="category sports">
-              SPORTS
-            </span>
-
-            <h3>
-              Football, Sports and Competition
-            </h3>
-
-            <p>
-              Follow football, Nigerian sports, international
-              competitions, teams, players and major sporting stories.
-            </p>
-
-            <a href="sports.html" class="article-link link-green">
-              Explore Sports →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- RELIGION -->
-
-        <article class="story-card" id="religion">
-
-          <div class="card-top card-religion">
+          <div class="card-icon faith">
             🕊️
           </div>
 
-          <div class="story-content">
-
-            <span class="category religion">
-              RELIGION
-            </span>
+          <div class="card-content">
 
             <h3>
-              Faith, Knowledge and Community
+              Faith and Belief
             </h3>
 
             <p>
-              Explore religious knowledge, community stories
-              and thoughtful discussions about faith.
+              Explore thoughtful discussions about faith,
+              belief, spirituality and religious values.
             </p>
 
-            <a href="religion.html" class="article-link link-purple">
-              Explore Religion →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- EDUCATION -->
-
-        <article class="story-card" id="education">
-
-          <div class="card-top card-education">
-            🎓
-          </div>
-
-          <div class="story-content">
-
-            <span class="category education">
-              EDUCATION
-            </span>
-
-            <h3>
-              Education and Learning
-            </h3>
-
-            <p>
-              Discover educational opportunities, learning
-              resources and stories from the education sector.
-            </p>
-
-            <a href="#" class="article-link link-cyan">
-              Explore Education →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- TECHNOLOGY -->
-
-        <article class="story-card" id="technology">
-
-          <div class="card-top card-technology">
-            💻
-          </div>
-
-          <div class="story-content">
-
-            <span class="category technology">
-              TECHNOLOGY
-            </span>
-
-            <h3>
-              Technology and Digital Life
-            </h3>
-
-            <p>
-              Follow useful technology stories, digital trends
-              and practical tips for everyday life.
-            </p>
-
-            <a href="#" class="article-link link-blue">
-              Explore Technology →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- BUSINESS -->
-
-        <article class="story-card" id="business">
-
-          <div class="card-top card-business">
-            💼
-          </div>
-
-          <div class="story-content">
-
-            <span class="category business">
-              BUSINESS
-            </span>
-
-            <h3>
-              Business and Entrepreneurship
-            </h3>
-
-            <p>
-              Read about business ideas, entrepreneurship
-              and opportunities for growth.
-            </p>
-
-            <a href="#" class="article-link link-darkgreen">
-              Explore Business →
-            </a>
-
-          </div>
-
-        </article>
-
-        <!-- LIFESTYLE -->
-
-        <article class="story-card" id="lifestyle">
-
-          <div class="card-top card-lifestyle">
-            🌸
-          </div>
-
-          <div class="story-content">
-
-            <span class="category lifestyle">
-              LIFESTYLE
-            </span>
-
-            <h3>
-              Lifestyle and Everyday Life
-            </h3>
-
-            <p>
-              Discover stories covering people, culture,
-              lifestyle and every
-                            day-to-day experiences.
-            </p>
-
-            <a href="#" class="article-link link-pink">
-              Explore Lifestyle →
+            <a href="#" class="card-link">
+              Explore Faith →
             </a>
 
           </div>
@@ -1120,31 +772,25 @@
         </article>
 
 
-        <!-- OPINION -->
+        <article class="religion-card">
 
-        <article class="story-card" id="opinion">
-
-          <div class="card-top card-opinion">
-            💬
+          <div class="card-icon knowledge">
+            📖
           </div>
 
-          <div class="story-content">
-
-            <span class="category opinion">
-              OPINION
-            </span>
+          <div class="card-content">
 
             <h3>
-              Ideas, Perspectives and Thoughtful Discussions
+              Religious Knowledge
             </h3>
 
             <p>
-              Read thoughtful opinions and perspectives on
-              important issues affecting our society and communities.
+              Discover educational materials, religious teachings,
+              history and useful knowledge.
             </p>
 
-            <a href="#" class="article-link link-orange">
-              Explore Opinion →
+            <a href="#" class="card-link">
+              Explore Knowledge →
             </a>
 
           </div>
@@ -1152,80 +798,108 @@
         </article>
 
 
-      </div>
+        <article class="religion-card">
 
-    </section>
-
-
-    <!-- WHY THE DAILY LENS -->
-
-    <section class="why-section">
-
-      <h2>
-        Why The Daily Lens?
-      </h2>
-
-      <p>
-        We want to create a platform where information is useful,
-        stories are meaningful and different perspectives can be heard.
-      </p>
-
-
-      <div class="values">
-
-
-        <div class="value">
-
-          <div class="value-icon">
-            🔎
-          </div>
-
-          <h3>
-            Inform
-          </h3>
-
-          <p>
-            We bring useful information and important stories
-            closer to our readers.
-          </p>
-
-        </div>
-
-
-        <div class="value">
-
-          <div class="value-icon">
-            💡
-          </div>
-
-          <h3>
-            Inspire
-          </h3>
-
-          <p>
-            We share ideas and stories that encourage learning,
-            creativity and positive action.
-          </p>
-
-        </div>
-
-
-        <div class="value">
-
-          <div class="value-icon">
+          <div class="card-icon community">
             🤝
           </div>
 
-          <h3>
-            Connect
-          </h3>
+          <div class="card-content">
 
-          <p>
-            We believe stories can bring people together,
-            regardless of their background or beliefs.
-          </p>
+            <h3>
+              Religion and Community
+            </h3>
 
-        </div>
+            <p>
+              Read about community service, charity,
+              cooperation and positive social activities.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Community →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="religion-card">
+
+          <div class="card-icon islam">
+            ☪️
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Islam
+            </h3>
+
+            <p>
+              Explore Islamic knowledge, history, values,
+              community stories and educational content.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Islam →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="religion-card">
+
+          <div class="card-icon christianity">
+            ✝️
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Christianity
+            </h3>
+
+            <p>
+              Explore Christian teachings, community stories,
+              values and discussions about faith.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Christianity →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="religion-card">
+
+          <div class="card-icon interfaith">
+            🌍
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Interfaith and Unity
+            </h3>
+
+            <p>
+              Explore stories and ideas that encourage peaceful
+              cooperation, respect and understanding between communities.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Unity →
+            </a>
+
+          </div>
+
+        </article>
 
 
       </div>
@@ -1233,39 +907,45 @@
     </section>
 
 
-    <!-- NEWSLETTER -->
-
-    <section class="newsletter">
+    <section class="community-message">
 
       <h2>
-        Stay Connected With The Daily Lens
+        🤝 Faith, Respect and Community
       </h2>
 
       <p>
-        More stories, ideas and useful information are coming.
+        The Daily Lens believes that responsible religious
+        journalism should encourage knowledge, respectful
+        discussion and peaceful coexistence.
       </p>
 
-      <form>
+      <div class="unity-box">
 
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          aria-label="Email address"
-        >
+        <strong>
+          Different beliefs. One community. Shared humanity.
+        </strong>
 
-        <button type="submit">
-          Subscribe
-        </button>
-
-      </form>
+      </div>
 
     </section>
+
+
+    <div class="notice">
+
+      <strong>
+        Welcome to The Daily Lens Religion section.
+      </strong>
+
+      This section will grow as we publish original articles,
+      religious education, community stories and carefully
+      researched discussions. Our goal is to provide useful
+      information while encouraging respect and understanding.
+
+    </div>
 
 
   </main>
 
-
-  <!-- FOOTER -->
 
   <footer>
 
@@ -1314,7 +994,7 @@
           </li>
 
           <li>
-            <a href="#religion">
+            <a href="religion.html">
               Religion
             </a>
           </li>
@@ -1333,32 +1013,26 @@
         <ul>
 
           <li>
-            <a href="#education">
+            <a href="#">
               Education
             </a>
           </li>
 
           <li>
-            <a href="#technology">
+            <a href="#">
               Technology
             </a>
           </li>
 
           <li>
-            <a href="#business">
+            <a href="#">
               Business
             </a>
           </li>
 
           <li>
-            <a href="#lifestyle">
+            <a href="#">
               Lifestyle
-            </a>
-          </li>
-
-          <li>
-            <a href="#opinion">
-              Opinion
             </a>
           </li>
 
@@ -1375,7 +1049,6 @@
       © 2026 The Daily Lens. All rights reserved.
 
     </div>
-
 
   </footer>
 
