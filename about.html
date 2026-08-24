@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | The Daily Lens</title>
+
+  <meta name="description" content="Learn about The Daily Lens, our mission, values and commitment to useful information, thoughtful stories and responsible journalism.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #ef4444,
+        #f97316,
+        #8b5cf6,
+        #2563eb
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #7c3aed,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .header-message {
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #bfdbfe;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #2563eb,
+        #0891b2
+      );
+      box-shadow: 0 5px 18px rgba(37, 99, 235, 0.2);
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.25s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #f97316;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .page-intro {
+      background:
+        linear-gradient(
+          135deg,
+          #fee2e2,
+          #fff7ed,
+          #f5f3ff,
+          #eff6ff
+        );
+      padding: 45px;
+      border-radius: 24px;
+      margin-bottom: 30px;
+      border-left: 7px solid #7c3aed;
+    }
+
+    .page-intro h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .page-intro h1 span {
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #7c3aed,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-intro p {
+      color: #475569;
+      font-size: 17px;
+      max-width: 800px;
+    }
+
+    .content-card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 7px 22px rgba(15, 23, 42, 0.06);
+    }
+
+    .content-card h2 {
+      color: #111827;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .content-card p {
+      color: #64748b;
+      margin-bottom: 15px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .value {
+      padding: 25px;
+      border-radius: 17px;
+      text-align: center;
+    }
+
+    .value:nth-child(1) {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+    }
+
+    .value:nth-child(2) {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+    }
+
+    .value:nth-child(3) {
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+    }
+
+    .value-icon {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .value h3 {
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    .value p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .mission {
+      background:
+        linear-gradient(
+          110deg,
+          #7c3aed,
+          #2563eb,
+          #0891b2
+        );
+      color: white;
+      padding: 38px;
+      border-radius: 22px;
+      margin-bottom: 30px;
+    }
+
+    .mission h2 {
+      margin-bottom: 10px;
+      font-size: 29px;
+    }
+
+    .mission p {
+      color: #e0f2fe;
+      max-width: 800px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      border-top: 6px solid #f97316;
+      margin-top: 50px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer p {
+      color: #9ca3af;
+      font-size: 14px;
+      max-width: 450px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: auto;
+      padding: 18px 20px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-message {
+        width: 100%;
+        text-align: center;
+      }
+
+      .page-intro {
+        padding: 32px 25px;
+      }
+
+      .page-intro h1 {
+        font-size: 32px;
+      }
+
+      .content-card {
+        padding: 28px 22px;
+      }
+
+      .values {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    📰 <span>The Daily Lens</span> — News, Ideas and Stories That Matter
+  </div>
+
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="logo-icon">
+          DL
+        </div>
+
+        <div>
+
+          <div class="logo">
+            The Daily Lens
+          </div>
+
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="header-message">
+        🌍 Inform • Inspire • Connect
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="religion.html">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="technology.html">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="business.html">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="lifestyle.html">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="opinion.html">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="container">
+
+
+    <section class="page-intro">
+
+      <h1>
+        ℹ️ About <span>The Daily Lens</span>
+      </h1>
+
+      <p>
+        News, ideas and stories that matter — presented
+        with the goal of informing, inspiring and connecting
+        our readers.
+      </p>
+
+    </section>
+
+
+    <section class="content-card">
+
+      <h2>
+        Who We Are
+      </h2>
+
+      <p>
+        The Daily Lens is a digital publication focused on
+        useful information, important stories, thoughtful
+        ideas and perspectives that matter to our communities.
+      </p>
+
+      <p>
+        Our platform covers news, sports, religion, education,
+        technology, business, lifestyle and opinion.
+      </p>
+
+      <p>
+        We want The Daily Lens to be a place where readers can
+        discover information, learn something useful and see
+        important issues from different perspectives.
+      </p>
+
+    </section>
+
+
+    <section class="mission">
+
+      <h2>
+        🎯 Our Mission
+      </h2>
+
+      <p>
+        Our mission is simple: to inform, inspire and connect.
+        We aim to publish useful stories and thoughtful content
+        that can help readers understand the world around them
+        and participate positively in their communities.
+      </p>
+
+    </section>
+
+
+    <section class="content-card">
+
+      <h2>
+        🌟 What We Value
+      </h2>
+
+      <div class="values">
+
+
+        <div class="value">
+
+          <div class="value-icon">
+            📰
+          </div>
+
+          <h3>
+            Information
+          </h3>
+
+          <p>
+            We believe people deserve useful and understandable
+            information about issues that affect their lives.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <div class="value-icon">
+            🤝
+          </div>
+
+          <h3>
+            Respect
+          </h3>
+
+          <p>
+            We encourage respectful discussion and understanding
+            between people with different views and backgrounds.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <div class="value-icon">
+            💡
+          </div>
+
+          <h3>
+            Ideas
+          </h3>
+
+          <p>
+            We believe thoughtful ideas and constructive discussion
+            can contribute to stronger communities.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <section class="content-card">
+
+      <h2>
+        🌍 Our Sections
+      </h2>
+
+      <p>
+        The Daily Lens brings together several areas of interest:
+      </p>
+
+      <p>
+        📰 <strong>News</strong> — important developments and stories.
+      </p>
+
+      <p>
+        ⚽ <strong>Sports</strong> — football, competitions,
+        teams and sporting stories.
+      </p>
+
+      <p>
+        🕊️ <strong>Religion</strong> — faith, knowledge,
+        community and respectful religious discussions.
+      </p>
+
+      <p>
+        🎓 <strong>Education</strong> — learning, opportunities
+        and educational resources.
+      </p>
+
+      <p>
+        💻 <strong>Technology</strong> — digital life,
+        technology and useful innovations.
+      </p>
+
+      <p>
+        💼 <strong>Business</strong> — entrepreneurship,
+        opportunities and business ideas.
+      </p>
+
+      <p>
+        🌸 <strong>Lifestyle</strong> — people, culture,
+        everyday life and experiences.
+      </p>
+
+      <p>
+        🗣️ <strong>Opinion</strong> — thoughtful perspectives
+        and analysis.
+      </p>
+
+    </section>
+
+
+    <section class="content-card">
+
+      <h2>
+        🤝 Different Perspectives
+      </h2>
+
+      <p>
+        The Daily Lens recognizes that people may have different
+        opinions, beliefs and experiences. Our aim is to create
+        room for constructive discussion while encouraging
+        respect and responsible communication.
+      </p>
+
+      <p>
+        We believe disagreement does not have to become hostility.
+        People can have different views and still listen,
+        learn and work together.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner">
+
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
+          <li>
+            <a href="opinion.html">
+              Opinion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="technology.html">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="business.html">
+              Business
+            </a>
+          </li>
+
+          <li>
+            <a href="lifestyle.html">
+              Lifestyle
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 The Daily Lens. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+</body>
+  </html>
