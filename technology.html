@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Technology | The Daily Lens</title>
+
+  <meta name="description" content="Technology news, artificial intelligence, digital trends, cybersecurity, apps, gadgets, startups and digital skills from The Daily Lens.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4,
+        #7c3aed,
+        #ec4899
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #2563eb,
+        #0891b2,
+        #7c3aed,
+        #ec4899
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .header-message {
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #bfdbfe;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #1d4ed8,
+        #2563eb,
+        #0891b2,
+        #7c3aed
+      );
+      box-shadow: 0 5px 18px rgba(37, 99, 235, 0.2);
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.25s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    nav a.active {
+      background: #f97316;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .page-heading {
+      background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #cffafe,
+        #ede9fe
+      );
+      padding: 40px;
+      border-radius: 22px;
+      margin-bottom: 35px;
+      border-left: 7px solid #2563eb;
+    }
+
+    .page-heading h1 {
+      font-size: 40px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .page-heading h1 span {
+      background: linear-gradient(
+        90deg,
+        #2563eb,
+        #0891b2,
+        #7c3aed
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-heading p {
+      color: #475569;
+      font-size: 17px;
+      max-width: 820px;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+      color: #111827;
+    }
+
+    .section-title p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .title-line {
+      display: flex;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .title-line span {
+      display: block;
+      height: 5px;
+      border-radius: 10px;
+    }
+
+    .one {
+      width: 45px;
+      background: #2563eb;
+    }
+
+    .two {
+      width: 30px;
+      background: #0891b2;
+    }
+
+    .three {
+      width: 20px;
+      background: #7c3aed;
+    }
+
+    .featured {
+      min-height: 310px;
+      padding: 45px;
+      border-radius: 25px;
+      margin-bottom: 40px;
+      color: white;
+      background: linear-gradient(
+        120deg,
+        #1e3a8a,
+        #2563eb,
+        #0891b2,
+        #7c3aed
+      );
+      box-shadow: 0 15px 35px rgba(37, 99, 235, 0.25);
+    }
+
+    .featured-content {
+      max-width: 820px;
+    }
+
+    .featured-label {
+      display: inline-block;
+      background: #facc15;
+      color: #713f12;
+      padding: 6px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .featured h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .featured p {
+      color: #dbeafe;
+      margin-bottom: 23px;
+      font-size: 16px;
+    }
+
+    .read-button {
+      display: inline-block;
+      background: white;
+      color: #2563eb;
+      padding: 12px 22px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .read-button:hover {
+      background: #facc15;
+      color: #713f12;
+    }
+
+    .technology-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-bottom: 45px;
+    }
+
+    .technology-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 7px 22px rgba(15, 23, 42, 0.07);
+      transition: 0.3s;
+    }
+
+    .technology-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.13);
+    }
+
+    .card-icon {
+      height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+    }
+
+    .ai {
+      background: linear-gradient(135deg, #7c3aed, #a855f7);
+    }
+
+    .mobile {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+    }
+
+    .internet {
+      background: linear-gradient(135deg, #0891b2, #14b8a6);
+    }
+
+    .cybersecurity {
+      background: linear-gradient(135deg, #dc2626, #f97316);
+    }
+
+    .skills {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+
+    .startups {
+      background: linear-gradient(135deg, #db2777, #ec4899);
+    }
+
+    .card-content {
+      padding: 24px;
+    }
+
+    .card-content h3 {
+      font-size: 21px;
+      color: #111827;
+      margin-bottom: 9px;
+    }
+
+    .card-content p {
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      font-weight: 900;
+      color: #2563eb;
+      font-size: 14px;
+    }
+
+    .digital-box {
+      background: white;
+      border-radius: 22px;
+      padding: 35px;
+      margin-bottom: 40px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .digital-box h2 {
+      font-size: 29px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .digital-box > p {
+      color: #64748b;
+      margin-bottom: 25px;
+    }
+
+    .digital-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .digital-item {
+      padding: 20px;
+      border-radius: 15px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+    }
+
+    .digital-item:nth-child(2) {
+      background: #ecfeff;
+      border-color: #a5f3fc;
+    }
+
+    .digital-item:nth-child(3) {
+      background: #f5f3ff;
+      border-color: #ddd6fe;
+    }
+
+    .digital-item:nth-child(4) {
+      background: #fdf2f8;
+      border-color: #fbcfe8;
+    }
+
+    .digital-item h3 {
+      color: #1d4ed8;
+      margin-bottom: 5px;
+    }
+
+    .digital-item p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .newsletter {
+      padding: 40px;
+      border-radius: 22px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+      background: linear-gradient(
+        110deg,
+        #1e3a8a,
+        #2563eb,
+        #0891b2,
+        #7c3aed
+      );
+    }
+
+    .newsletter h2 {
+      font-size: 29px;
+      margin-bottom: 7px;
+    }
+
+    .newsletter p {
+      color: #dbeafe;
+      margin-bottom: 20px;
+    }
+
+    .newsletter input {
+      width: 55%;
+      max-width: 450px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      padding: 14px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #f97316;
+      color: white;
+      font-weight: 900;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      border-top: 6px solid #2563eb;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer p {
+      color: #9ca3af;
+      font-size: 14px;
+      max-width: 450px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: auto;
+      padding: 18px 20px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 850px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-message {
+        width: 100%;
+        text-align: center;
+      }
+
+      .page-heading h1 {
+        font-size: 32px;
+      }
+
+      .featured {
+        padding: 32px 25px;
+      }
+
+      .featured h2 {
+        font-size: 27px;
+      }
+
+      .technology-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .digital-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .newsletter button {
+        width: 100%;
+        margin-left: 0;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    💻 <span>The Daily Lens</span> — Technology, Innovation and Digital Life
+  </div>
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="logo-icon">
+          DL
+        </div>
+
+        <div>
+
+          <div class="logo">
+            The Daily Lens
+          </div>
+
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="header-message">
+        💡 Discover • Create • Innovate
+      </div>
+
+    </div>
+
+  </header>
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="religion.html">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="technology.html" class="active">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <main class="container">
+
+    <section class="page-heading">
+
+      <h1>
+        💻 <span>Technology</span>
+      </h1>
+
+      <p>
+        Explore technology news, artificial intelligence,
+        digital trends, cybersecurity, apps, startups and
+        practical digital skills for everyday life.
+      </p>
+
+    </section>
+
+    <section>
+
+      <div class="section-title">
+
+        <h2>
+          Featured Technology Story
+        </h2>
+
+        <p>
+          Technology is changing how we learn, work and connect.
+        </p>
+
+        <div class="title-line">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+
+      </div>
+
+      <div class="featured">
+
+        <div class="featured-content">
+
+          <span class="featured-label">
+            ⭐ FEATURED
+          </span>
+
+          <h2>
+            How Technology Is Creating New Possibilities
+          </h2>
+
+          <p>
+            From artificial intelligence and digital education
+            to online business and communication, technology is
+            opening new possibilities for people and communities.
+          </p>
+
+          <a href="#" class="read-button">
+            Read Story →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="section-title">
+
+        <h2>
+          Explore Technology
+        </h2>
+
+        <p>
+          Discover important areas of the digital world.
+        </p>
+
+        <div class="title-line">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+
+      </div>
+
+      <div class="technology-grid">
+
+        <article class="technology-card">
+
+          <div class="card-icon ai">
+            🤖
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Artificial Intelligence
+            </h3>
+
+            <p>
+              Explore AI tools, developments, opportunities,
+              responsible use and how artificial intelligence
+              is changing different industries.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore AI →
+            </a>
+
+          </div>
+
+        </article>
+
+        <article class="technology-card">
+
+          <div class="card-icon mobile">
+            📱
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Mobile and Apps
+            </h3>
+
+            <p>
+              Discover useful mobile applications, smartphone
+              developments, digital services and practical tips.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Mobile →
+            </a>
+
+          </div>
+
+        </article>
+
+        <article class="technology-card">
+
+          <div class="card-icon internet">
+            🌐
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Internet and Digital Trends
+            </h3>
+
+            <p>
+              Follow important internet developments, digital
+              platforms, online communities and emerging trends.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Digital Trends →
+            </a>
+
+          </div>
+
+        </article>
+
+        <article class="technology-card">
+
+          <div class="card-icon cybersecurity">
+            🔐
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Cybersecurity
+            </h3>
+
+            <p>
+              Learn about online safety, privacy, secure accounts,
+              digital threats and responsible internet use.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Security →
+            </a>
+
+          </div>
+
+        </article>
+
+        <article class="technology-card">
+
+          <div class="card-icon skills">
+            🧑‍💻
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Digital Skills
+            </h3>
+
+            <p>
+              Discover practical computer skills, coding,
+              design, productivity tools and digital learning.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Skills →
+            </a>
+
+          </div>
+
+        </article>
+
+        <article class="technology-card">
+
+          <div class="card-icon startups">
+            🚀
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Startups and Innovation
+            </h3>
+
+            <p>
+              Follow technology startups, African innovation,
+              entrepreneurs, new ideas and digital businesses.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Innovation →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="digital-box">
+
+      <h2>
+        🌐 Technology for Everyday Life
+      </h2>
+
+      <p>
+        Technology should not only be about new devices. It can
+        help people learn, communicate, work, create businesses
+        and solve everyday problems.
+      </p>
+
+      <div class="digital-list">
+
+        <div class="digital-item">
+
+          <h3>
+            📚 Technology and Education
+          </h3>
+
+          <p>
+            Digital tools can make learning more accessible through
+            online courses, educational platforms and useful resources.
+          </p>
+
+        </div>
+
+        <div class="digital-item">
+
+          <h3>
+            💼 Technology and Business
+          </h3>
+
+          <p>
+            Digital platforms can help entrepreneurs reach customers,
+            manage businesses and create new opportunities.
+          </p>
+
+        </div>
+
+        <div class="digital-item">
+
+          <h3>
+            🤝 Technology and Communities
+          </h3>
+
+          <p>
+            Responsible technology can improve communication,
+            cooperation and access to useful information.
+          </p>
+
+        </div>
+
+        <div class="digital-item">
+
+          <h3>
+            🔒 Responsible Digital Life
+          </h3>
+
+          <p>
+            Being informed about privacy, security and responsible
+            online behaviour helps people use technology safely.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="newsletter">
+
+      <h2>
+        📩 Stay Connected
+      </h2>
+
+      <p>
+        More technology stories, digital tips and innovation news
+        are coming to The Daily Lens.
+      </p>
+
+      <input
+        type="email"
+        placeholder="Enter your email address"
+      >
+
+      <button type="button">
+        Subscribe
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="technology.html">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Business
+            </a>
+  </li>
