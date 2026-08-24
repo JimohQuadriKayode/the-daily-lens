@@ -6,7 +6,7 @@
 
   <title>The Daily Lens | News, Ideas and Stories That Matter</title>
 
-  <meta name="description" content="The Daily Lens brings you news, religion, education, technology, business, lifestyle and thoughtful opinions.">
+  <meta name="description" content="The Daily Lens brings you news, sports, religion, education, technology, business, lifestyle and thoughtful opinions.">
 
   <style>
 
@@ -27,9 +27,7 @@
       line-height: 1.6;
     }
 
-    /* =========================
-       COLOR STRIP
-    ========================= */
+    /* RAINBOW TOP LINE */
 
     .rainbow {
       height: 7px;
@@ -46,9 +44,7 @@
       );
     }
 
-    /* =========================
-       TOP BAR
-    ========================= */
+    /* TOP BAR */
 
     .top-bar {
       background: #111827;
@@ -63,9 +59,7 @@
       color: #facc15;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
       background: white;
@@ -125,7 +119,6 @@
     .tagline {
       color: #64748b;
       font-size: 14px;
-      font-weight: 500;
     }
 
     .header-message {
@@ -138,9 +131,7 @@
       border: 1px solid #fed7aa;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================= */
+    /* NAVIGATION */
 
     nav {
       background: linear-gradient(
@@ -166,7 +157,7 @@
       display: block;
       color: white;
       text-decoration: none;
-      padding: 16px 17px;
+      padding: 16px 15px;
       font-size: 14px;
       font-weight: bold;
       transition: 0.25s;
@@ -180,9 +171,7 @@
       background: #f97316;
     }
 
-    /* =========================
-       MAIN
-    ========================= */
+    /* MAIN */
 
     .container {
       max-width: 1180px;
@@ -190,9 +179,7 @@
       padding: 0 20px;
     }
 
-    /* =========================
-       WELCOME
-    ========================= */
+    /* WELCOME */
 
     .welcome {
       background:
@@ -208,18 +195,6 @@
       position: relative;
       overflow: hidden;
       border: 1px solid #e5e7eb;
-    }
-
-    .welcome::after {
-      content: "";
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      background: #fde68a;
-      border-radius: 50%;
-      right: -70px;
-      top: -70px;
-      opacity: 0.35;
     }
 
     .welcome h1 {
@@ -251,9 +226,7 @@
       z-index: 2;
     }
 
-    /* =========================
-       SECTION TITLE
-    ========================= */
+    /* SECTION TITLE */
 
     .section-title {
       margin-bottom: 20px;
@@ -296,9 +269,7 @@
       background: #7c3aed;
     }
 
-    /* =========================
-       FEATURED STORY
-    ========================= */
+    /* FEATURED */
 
     .featured {
       min-height: 310px;
@@ -316,28 +287,6 @@
           #2563eb
         );
       box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
-    }
-
-    .featured::before {
-      content: "";
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.09);
-      right: -70px;
-      top: -90px;
-    }
-
-    .featured::after {
-      content: "";
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: rgba(250, 204, 21, 0.12);
-      right: 150px;
-      bottom: -100px;
     }
 
     .featured-content {
@@ -383,12 +332,9 @@
     .read-button:hover {
       background: #facc15;
       color: #713f12;
-      transform: translateY(-2px);
     }
 
-    /* =========================
-       CATEGORY CARDS
-    ========================= */
+    /* STORY GRID */
 
     .stories-grid {
       display: grid;
@@ -422,6 +368,10 @@
 
     .card-news {
       background: linear-gradient(135deg, #ef4444, #f97316);
+    }
+
+    .card-sports {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
     }
 
     .card-religion {
@@ -464,6 +414,10 @@
 
     .news {
       background: #ef4444;
+    }
+
+    .sports {
+      background: #16a34a;
     }
 
     .religion {
@@ -512,19 +466,23 @@
       color: #ef4444;
     }
 
-    .link-purple {
-      color: #7c3aed;
+    .link-green {
+      color: #16a34a;
     }
 
-    .link-blue {
-      color: #2563eb;
+    .link-purple {
+      color: #7c3aed;
     }
 
     .link-cyan {
       color: #0891b2;
     }
 
-    .link-green {
+    .link-blue {
+      color: #2563eb;
+    }
+
+    .link-darkgreen {
       color: #059669;
     }
 
@@ -536,9 +494,7 @@
       color: #ea580c;
     }
 
-    /* =========================
-       VALUES
-    ========================= */
+    /* WHY SECTION */
 
     .why-section {
       background: white;
@@ -601,9 +557,7 @@
       font-size: 14px;
     }
 
-    /* =========================
-       NEWSLETTER
-    ========================= */
+    /* NEWSLETTER */
 
     .newsletter {
       padding: 40px;
@@ -619,7 +573,6 @@
           #2563eb,
           #7c3aed
         );
-      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
     }
 
     .newsletter h2 {
@@ -653,29 +606,12 @@
       margin-left: 5px;
     }
 
-    .newsletter button:hover {
-      background: #ea580c;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       background: #111827;
       color: white;
-      border-top: 6px solid transparent;
-      border-image: linear-gradient(
-        90deg,
-        #ef4444,
-        #f97316,
-        #eab308,
-        #22c55e,
-        #06b6d4,
-        #3b82f6,
-        #8b5cf6,
-        #ec4899
-      ) 1;
+      border-top: 6px solid #f97316;
     }
 
     .footer-inner {
@@ -726,9 +662,7 @@
       font-size: 13px;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 850px) {
 
@@ -789,6 +723,7 @@
     📰 <span>The Daily Lens</span> — News, Ideas and Stories That Matter
   </div>
 
+
   <header>
 
     <div class="header-inner">
@@ -800,6 +735,7 @@
         </div>
 
         <div>
+
           <div class="logo">
             The Daily Lens
           </div>
@@ -807,6 +743,7 @@
           <div class="tagline">
             News, ideas and stories that matter
           </div>
+
         </div>
 
       </div>
@@ -825,14 +762,20 @@
     <ul>
 
       <li>
-        <a href="#" class="active">
+        <a href="index.html" class="active">
           Home
         </a>
       </li>
 
       <li>
-        <a href="#news">
+        <a href="news.html">
           News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
         </a>
       </li>
 
@@ -888,7 +831,7 @@
       </h1>
 
       <p>
-        Your destination for news, religion, education,
+        Your destination for news, sports, religion, education,
         technology, business, lifestyle and thoughtful opinions.
         We bring you useful information, important stories and
         perspectives on issues that matter to our communities.
@@ -971,6 +914,8 @@
       <div class="stories-grid">
 
 
+        <!-- NEWS -->
+
         <article class="story-card" id="news">
 
           <div class="card-top card-news">
@@ -992,14 +937,48 @@
               events and stories happening around you.
             </p>
 
-            <a href="#" class="article-link link-red">
-              Read Article →
+            <a href="news.html" class="article-link link-red">
+              Explore News →
             </a>
 
           </div>
 
         </article>
 
+
+        <!-- SPORTS -->
+
+        <article class="story-card" id="sports">
+
+          <div class="card-top card-sports">
+            ⚽
+          </div>
+
+          <div class="story-content">
+
+            <span class="category sports">
+              SPORTS
+            </span>
+
+            <h3>
+              Football, Sports and Competition
+            </h3>
+
+            <p>
+              Follow football, Nigerian sports, international
+              competitions, teams, players and major sporting stories.
+            </p>
+
+            <a href="sports.html" class="article-link link-green">
+              Explore Sports →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- RELIGION -->
 
         <article class="story-card" id="religion">
 
@@ -1023,13 +1002,15 @@
             </p>
 
             <a href="#" class="article-link link-purple">
-              Read Article →
+              Explore Religion →
             </a>
 
           </div>
 
         </article>
 
+
+        <!-- EDUCATION -->
 
         <article class="story-card" id="education">
 
@@ -1053,13 +1034,15 @@
             </p>
 
             <a href="#" class="article-link link-cyan">
-              Read Article →
+              Explore Education →
             </a>
 
           </div>
 
         </article>
 
+
+        <!-- TECHNOLOGY -->
 
         <article class="story-card" id="technology">
 
@@ -1083,13 +1066,15 @@
             </p>
 
             <a href="#" class="article-link link-blue">
-              Read Article →
+              Explore Technology →
             </a>
 
           </div>
 
         </article>
 
+
+        <!-- BUSINESS -->
 
         <article class="story-card" id="business">
 
@@ -1104,3 +1089,295 @@
             </span>
 
             <h3>
+              Business and Entrepreneurship
+            </h3>
+
+            <p>
+              Read about business ideas, entrepreneurship
+              and opportunities for growth.
+            </p>
+
+            <a href="#" class="article-link link-darkgreen">
+              Explore Business →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- LIFESTYLE -->
+
+        <article class="story-card" id="lifestyle">
+
+          <div class="card-top card-lifestyle">
+            🌸
+          </div>
+
+          <div class="story-content">
+
+            <span class="category lifestyle">
+              LIFESTYLE
+            </span>
+
+            <h3>
+              Lifestyle and Everyday Life
+            </h3>
+
+            <p>
+                            Discover stories covering people, culture,
+              lifestyle and everyday experiences.
+            </p>
+
+            <a href="#" class="article-link link-pink">
+              Explore Lifestyle →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPINION -->
+
+        <article class="story-card" id="opinion">
+
+          <div class="card-top card-opinion">
+            💬
+          </div>
+
+          <div class="story-content">
+
+            <span class="category opinion">
+              OPINION
+            </span>
+
+            <h3>
+              Thoughts and Perspectives
+            </h3>
+
+            <p>
+              Read thoughtful perspectives and opinions
+              on issues affecting our communities.
+            </p>
+
+            <a href="#" class="article-link link-orange">
+              Explore Opinion →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT WE STAND FOR -->
+
+    <section class="why-section">
+
+      <h2>
+        What We Stand For
+      </h2>
+
+      <p>
+        Good journalism should inform people, encourage meaningful
+        conversations and help communities understand one another.
+      </p>
+
+
+      <div class="values">
+
+        <div class="value">
+
+          <div class="value-icon">
+            📰
+          </div>
+
+          <h3>
+            Inform
+          </h3>
+
+          <p>
+            Useful information and stories that
+            keep our readers informed.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <div class="value-icon">
+            💡
+          </div>
+
+          <h3>
+            Inspire
+          </h3>
+
+          <p>
+            Ideas, experiences and perspectives
+            that encourage positive thinking.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <div class="value-icon">
+            🤝
+          </div>
+
+          <h3>
+            Connect
+          </h3>
+
+          <p>
+            Stories that bring people, communities
+            and ideas closer together.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STAY CONNECTED -->
+
+    <section class="newsletter">
+
+      <h2>
+        Stay Connected
+      </h2>
+
+      <p>
+        More stories, ideas and useful information are coming
+        to The Daily Lens.
+      </p>
+
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        aria-label="Email address"
+      >
+
+      <button type="button">
+        Subscribe
+      </button>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#religion">
+              Religion
+            </a>
+          </li>
+
+          <li>
+            <a href="#education">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="#technology">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="#business">
+              Business
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 The Daily Lens. All rights reserved.
+    </div>
+
+  </footer>
+
+
+</body>
+        </html>
+   
