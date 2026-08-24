@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sports | The Daily Lens</title>
+
+  <meta name="description" content="Football, Nigerian sports, international sports, competitions, players, teams and major sporting stories from The Daily Lens.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8f7;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    /* TOP COLOUR BAR */
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    /* TOP BAR */
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    /* HEADER */
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e,
+        #2563eb
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.25);
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #16a34a,
+        #0891b2,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .header-message {
+      background: #f0fdf4;
+      color: #15803d;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #bbf7d0;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #166534,
+        #16a34a,
+        #0891b2,
+        #2563eb
+      );
+      box-shadow: 0 5px 18px rgba(22, 163, 74, 0.2);
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.25s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    nav a.active {
+      background: #f97316;
+    }
+
+    /* MAIN */
+
+    .container {
+      max-width: 1180px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    /* PAGE INTRO */
+
+    .page-intro {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(22, 163, 74, 0.12),
+          rgba(6, 182, 212, 0.10),
+          rgba(37, 99, 235, 0.10)
+        );
+      padding: 40px;
+      border-radius: 22px;
+      margin-bottom: 35px;
+      border: 1px solid #dbeafe;
+    }
+
+    .page-intro h1 {
+      font-size: 42px;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .page-intro h1 span {
+      background: linear-gradient(
+        90deg,
+        #16a34a,
+        #0891b2,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-intro p {
+      max-width: 800px;
+      color: #475569;
+      font-size: 17px;
+    }
+
+    /* SECTION TITLE */
+
+    .section-title {
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 29px;
+      color: #111827;
+    }
+
+    .section-title p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .title-line {
+      display: flex;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .title-line span {
+      display: block;
+      height: 5px;
+      border-radius: 10px;
+    }
+
+    .line-one {
+      width: 40px;
+      background: #16a34a;
+    }
+
+    .line-two {
+      width: 30px;
+      background: #f97316;
+    }
+
+    .line-three {
+      width: 20px;
+      background: #2563eb;
+    }
+
+    /* FEATURED SPORTS STORY */
+
+    .featured {
+      min-height: 330px;
+      padding: 45px;
+      border-radius: 25px;
+      margin-bottom: 40px;
+      color: white;
+      background:
+        linear-gradient(
+          120deg,
+          #14532d,
+          #15803d 45%,
+          #0891b2,
+          #2563eb
+        );
+      box-shadow: 0 15px 35px rgba(22, 101, 52, 0.25);
+    }
+
+    .featured-content {
+      max-width: 780px;
+    }
+
+    .featured-label {
+      display: inline-block;
+      background: #facc15;
+      color: #713f12;
+      padding: 6px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .featured h2 {
+      font-size: 35px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .featured p {
+      color: #dcfce7;
+      margin-bottom: 23px;
+      font-size: 16px;
+    }
+
+    .read-button {
+      display: inline-block;
+      background: white;
+      color: #15803d;
+      padding: 12px 22px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .read-button:hover {
+      background: #facc15;
+      color: #713f12;
+    }
+
+    /* SPORTS CATEGORIES */
+
+    .sports-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-bottom: 45px;
+    }
+
+    .sports-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 7px 22px rgba(15, 23, 42, 0.07);
+      transition: 0.3s;
+    }
+
+    .sports-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.13);
+    }
+
+    .card-icon {
+      height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 45px;
+    }
+
+    .football {
+      background: linear-gradient(135deg, #15803d, #22c55e);
+    }
+
+    .nigeria {
+      background: linear-gradient(135deg, #166534, #16a34a);
+    }
+
+    .international {
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+    }
+
+    .competitions {
+      background: linear-gradient(135deg, #ea580c, #f97316);
+    }
+
+    .players {
+      background: linear-gradient(135deg, #7c3aed, #a855f7);
+    }
+
+    .other-sports {
+      background: linear-gradient(135deg, #0891b2, #06b6d4);
+    }
+
+    .card-content {
+      padding: 24px;
+    }
+
+    .card-content h3 {
+      font-size: 21px;
+      color: #111827;
+      margin-bottom: 9px;
+    }
+
+    .card-content p {
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      font-weight: 900;
+      color: #15803d;
+      font-size: 14px;
+    }
+
+    /* FOOTBALL FOCUS */
+
+    .football-focus {
+      background: white;
+      border-radius: 22px;
+      padding: 35px;
+      margin-bottom: 40px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .football-focus h2 {
+      font-size: 29px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .football-focus > p {
+      color: #64748b;
+      margin-bottom: 25px;
+    }
+
+    .football-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .football-item {
+      padding: 20px;
+      border-radius: 15px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+    }
+
+    .football-item h3 {
+      color: #166534;
+      margin-bottom: 5px;
+    }
+
+    .football-item p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+      padding: 40px;
+      border-radius: 22px;
+      color: white;
+      text-align: center;
+      margin-bottom: 45px;
+      background:
+        linear-gradient(
+          110deg,
+          #166534,
+          #0891b2,
+          #2563eb,
+          #7c3aed
+        );
+    }
+
+    .newsletter h2 {
+      font-size: 29px;
+      margin-bottom: 7px;
+    }
+
+    .newsletter p {
+      color: #e0f2fe;
+      margin-bottom: 20px;
+    }
+
+    .newsletter input {
+      width: 55%;
+      max-width: 450px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      padding: 14px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #f97316;
+      color: white;
+      font-weight: 900;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: white;
+      border-top: 6px solid #16a34a;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    footer p {
+      color: #9ca3af;
+      font-size: 14px;
+      max-width: 450px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: auto;
+      padding: 18px 20px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-message {
+        width: 100%;
+        text-align: center;
+      }
+
+      .page-intro h1 {
+        font-size: 32px;
+      }
+
+      .featured {
+        padding: 32px 25px;
+      }
+
+      .featured h2 {
+        font-size: 27px;
+      }
+
+      .sports-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .football-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .newsletter button {
+        width: 100%;
+        margin-left: 0;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    ⚽ <span>The Daily Lens Sports</span> — Football, Competition and Sporting Stories
+  </div>
+
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="logo-icon">
+          DL
+        </div>
+
+        <div>
+
+          <div class="logo">
+            The Daily Lens
+          </div>
+
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="header-message">
+        ⚽ Passion • Competition • Excellence
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html" class="active">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#religion">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#education">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#technology">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#business">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#lifestyle">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#opinion">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="container">
+
+
+    <!-- PAGE INTRO -->
+
+    <section class="page-intro">
+
+      <h1>
+        Welcome to
+        <span>Sports</span>
+      </h1>
+
+      <p>
+        Follow football, Nigerian sports, international competitions,
+        players, teams and the sporting stories that matter to fans.
+      </p>
+
+    </section>
+
+
+    <!-- FEATURED -->
+
+    <section>
+
+      <div class="section-title">
+
+        <h2>
+          Featured Sports Story
+        </h2>
+
+        <p>
+          The biggest stories from the world of sport.
+        </p>
+
+        <div class="title-line">
+          <span class="line-one"></span>
+          <span class="line-two"></span>
+          <span class="line-three"></span>
+        </div>
+
+      </div>
+
+
+      <div class="featured">
+
+        <div class="featured-content">
+
+          <span class="featured-label">
+            ⭐ SPORTS FEATURE
+          </span>
+
+          <h2>
+            The Beautiful Game: Football Brings Fans Together
+          </h2>
+
+          <p>
+            From local pitches to the biggest stadiums in the world,
+            football continues to connect people through passion,
+            competition and unforgettable moments.
+          </p>
+
+          <a href="#football" class="read-button">
+            Explore Football →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SPORTS SECTIONS -->
+
+    <section>
+
+      <div class="section-title">
+
+        <h2>
+          Explore Sports
+        </h2>
+
+        <p>
+          Discover different areas of sports coverage.
+        </p>
+
+        <div class="title-line">
+          <span class="line-one"></span>
+          <span class="line-two"></span>
+          <span class="line-three"></span>
+        </div>
+
+      </div>
+
+
+      <div class="sports-grid">
+
+
+        <!-- FOOTBALL -->
+
+        <article class="sports-card">
+
+          <div class="card-icon football">
+            ⚽
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Football
+            </h3>
+
+            <p>
+              Follow football news, matches, clubs, players,
+              transfers, results and major developments.
+            </p>
+
+            <a href="#football" class="card-link">
+              Explore Football →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- NIGERIAN SPORTS -->
+
+        <article class="sports-card">
+
+          <div class="card-icon nigeria">
+            🇳🇬
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Nigerian Sports
+            </h3>
+
+            <p>
+              Discover stories about Nigerian football,
+              athletes, teams and sporting achievements.
+            </p>
+
+            <a href="#nigeria" class="card-link">
+              Nigerian Sports →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- INTERNATIONAL -->
+
+        <article class="sports-card">
+
+          <div class="card-icon international">
+            🌍
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              International Sports
+            </h3>
+
+            <p>
+              Follow major sporting news, teams, players
+              and competitions from around the world.
+            </p>
+
+            <a href="#international" class="card-link">
+              International Sports →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- COMPETITIONS -->
+
+        <article class="sports-card">
+
+          <div class="card-icon competitions">
+            🏆
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Competitions
+            </h3>
+
+            <p>
+              Keep track of major tournaments, leagues,
+              cups and important sporting competitions.
+            </p>
+
+            <a href="#competitions" class="card-link">
+              View Competitions →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PLAYERS -->
+
+        <article class="sports-card">
+
+          <div class="card-icon players">
+            👤
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Players & Teams
+            </h3>
+
+            <p>
+              Learn about players, clubs, teams, performances
+              and stories behind sporting personalities.
+            </p>
+
+            <a href="#players" class="card-link">
+              Players & Teams →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- OTHER SPORTS -->
+
+        <article class="sports-card">
+
+          <div class="card-icon other-sports">
+            🏅
+          </div>
+
+          <div class="card-content">
+
+            <h3>
+              Other Sports
+            </h3>
+
+            <p>
+              Athletics, basketball, boxing, tennis and
+              other sporting activities.
+            </p>
+
+            <a href="#other-sports" class="card-link">
+              Explore Other Sports →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTBALL FOCUS -->
+
+    <section class="football-focus" id="football">
+
+      <h2>
+        ⚽ Football
+      </h2>
+
+      <p>
+        Football will be one of the major focuses of The Daily Lens
+        Sports section.
+      </p>
+
+
+      <div class="football-list">
+
+
+        <div class="football-item" id="nigeria">
+
+          <h3>
+            🇳🇬 Nigerian Football
+          </h3>
+
+          <p>
+            News and stories about Nigerian football,
+            local competitions, clubs, players and national teams.
+          </p>
+
+        </div>
+
+
+        <div class="football-item" id="international">
+
+          <h3>
+            🌍 International Football
+          </h3>
+
+          <p>
+            Major international football stories,
+            clubs, players and competitions.
+          </p>
+
+        </div>
+
+
+        <div class="football-item" id="competitions">
+
+          <h3>
+            🏆 Competitions
+          </h3>
+
+          <p>
+            League competitions, cups and major football
+            tournaments from Nigeria and around the world.
+          </p>
+
+        </div>
+
+
+        <div class="football-item" id="players">
+
+          <h3>
+            👤 Players & Teams
+          </h3>
+
+          <p>
+            Profiles, performances and stories about
+            football players and teams.
+          </p>
+
+        </div>
+
+
+        <div class="football-item" id="other-sports">
+
+          <h3>
+            🏅 Other Sports
+          </h3>
+
+          <p>
+            Coverage of athletics, basketball, boxing,
+            tennis and other sports.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+      <h2>
+        Stay Connected
+      </h2>
+
+      <p>
+        More sports stories, football updates and useful information
+        are coming to The Daily Lens.
+      </p>
+
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        aria-label="Email address"
+      >
+
+      <button type="button">
+        Subscribe
+      </button>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+                        Sports
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sports
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="#football">
+              Football
+            </a>
+          </li>
+
+          <li>
+            <a href="#nigeria">
+              Nigerian Football
+            </a>
+          </li>
+
+          <li>
+            <a href="#international">
+              International Football
+            </a>
+          </li>
+
+          <li>
+            <a href="#other-sports">
+              Other Sports
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 The Daily Lens. All rights reserved.
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
+
+        
+
+   
