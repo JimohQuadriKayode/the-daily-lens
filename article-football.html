@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Football and the Power of Sport | The Daily Lens</title>
+
+  <meta name="description" content="Football brings people together through competition, teamwork, passion and shared experiences.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8f7;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e,
+        #2563eb
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #16a34a,
+        #0891b2,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #166534,
+        #16a34a,
+        #0891b2,
+        #2563eb
+      );
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .article-header {
+      background: white;
+      padding: 40px;
+      border-radius: 22px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 25px rgba(15,23,42,0.06);
+      margin-bottom: 30px;
+    }
+
+    .category {
+      display: inline-block;
+      background: #dcfce7;
+      color: #15803d;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .article-header h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #111827;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .article-meta {
+      color: #94a3b8;
+      font-size: 13px;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 15px;
+    }
+
+    .article-image {
+      height: 300px;
+      border-radius: 22px;
+      background:
+        linear-gradient(
+          135deg,
+          #166534,
+          #16a34a,
+          #0891b2,
+          #2563eb
+        );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      margin-bottom: 30px;
+      box-shadow: 0 12px 30px rgba(22,163,74,0.2);
+    }
+
+    .article-body {
+      background: white;
+      padding: 40px;
+      border-radius: 22px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 25px rgba(15,23,42,0.05);
+    }
+
+    .article-body p {
+      font-size: 17px;
+      color: #475569;
+      margin-bottom: 22px;
+    }
+
+    .article-body h2 {
+      color: #111827;
+      font-size: 27px;
+      margin: 30px 0 12px;
+    }
+
+    .article-body ul {
+      margin: 10px 0 25px 25px;
+      color: #475569;
+    }
+
+    .article-body li {
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border-left: 5px solid #16a34a;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 10px;
+      color: #166534;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      background: #16a34a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .back-button:hover {
+      background: #15803d;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #111827;
+      color: white;
+      padding: 40px 20px 20px;
+      border-top: 6px solid #16a34a;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: 25px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .article-header {
+        padding: 28px 22px;
+      }
+
+      .article-header h1 {
+        font-size: 32px;
+      }
+
+      .article-image {
+        height: 220px;
+        font-size: 75px;
+      }
+
+      .article-body {
+        padding: 28px 22px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    ⚽ <span>The Daily Lens</span> — Sports, Competition and Stories That Matter
+  </div>
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="brand">
+
+        <div class="logo-icon">
+          DL
+        </div>
+
+        <div>
+
+          <div class="logo">
+            The Daily Lens
+          </div>
+
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="religion.html">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="technology.html">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="business.html">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="lifestyle.html">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="opinion.html">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="container">
+
+    <article>
+
+      <header class="article-header">
+
+        <span class="category">
+          FOOTBALL
+        </span>
+
+        <h1>
+          Football and the Power of Sport to Bring People Together
+        </h1>
+
+        <p class="intro">
+          Football is more than a game. It can create shared
+          experiences, encourage teamwork and bring people from
+          different backgrounds together.
+        </p>
+
+        <div class="article-meta">
+          Published by The Daily Lens • Sports
+        </div>
+
+      </header>
+
+
+      <div class="article-image">
+        ⚽
+      </div>
+
+
+      <div class="article-body">
+
+        <p>
+          Football is one of the world's most popular sports.
+          Millions of people follow their favourite teams,
+          support players and gather with friends and family
+          to watch important matches.
+        </p>
+
+        <p>
+          In Nigeria, football has a special place in the hearts
+          of many people. From local football grounds to major
+          international competitions, the sport creates moments
+          that people can share regardless of their background.
+        </p>
+
+
+        <h2>
+          More Than Competition
+        </h2>
+
+        <p>
+          Football is naturally competitive. Teams train hard,
+          players work to improve their skills and supporters
+          celebrate victories. But sport can also teach lessons
+          that go beyond winning and losing.
+        </p>
+
+        <div class="highlight">
+          <strong>
+            Good sportsmanship means competing with determination
+            while respecting opponents, officials, teammates and
+            supporters.
+          </strong>
+        </div>
+
+
+        <h2>
+          The Importance of Teamwork
+        </h2>
+
+        <p>
+          A successful football team depends on cooperation.
+          Players have different responsibilities, but everyone
+          must work toward a common objective.
+        </p>
+
+        <p>
+          This lesson can also apply to everyday life. Communities
+          and organisations can achieve more when people cooperate,
+          communicate and support one another.
+        </p>
+
+
+        <h2>
+          Football and Nigerian Communities
+        </h2>
+
+        <p>
+          Football can bring together people who may otherwise
+          have very different interests. During major matches,
+          supporters often gather in viewing centres, homes,
+          schools and community spaces.
+        </p>
+
+        <p>
+          These shared experiences can create friendships and
+          conversations while strengthening a sense of community.
+        </p>
+
+
+        <h2>
+          Respect in Sport
+        </h2>
+
+        <p>
+          Passion is an important part of football, but passion
+          should never become hatred or violence. Supporters can
+          strongly support their teams while still respecting
+          people who support different teams.
+        </p>
+
+        <ul>
+
+          <li>
+            Respect players and supporters of other teams.
+          </li>
+
+          <li>
+            Accept that football results can go either way.
+          </li>
+
+          <li>
+            Celebrate victories without insulting others.
+          </li>
+
+          <li>
+            Encourage young people to enjoy sport positively.
+          </li>
+
+        </ul>
+
+
+        <h2>
+          The Bigger Picture
+        </h2>
+
+        <p>
+          Sport has the ability to create connections between
+          people. Football can remind us that competition does
+          not have to destroy friendship and that differences
+          do not have to prevent cooperation.
+        </p>
+
+        <p>
+          Whether on a local football pitch or on an international
+          stage, the best part of sport is not only who wins.
+          It is also the relationships, discipline, teamwork and
+          shared experiences that the game can create.
+        </p>
+
+
+        <a href="sports.html" class="back-button">
+          ← Back to Sports
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="technology.html">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="business.html">
+              Business
+            </a>
+          </li>
+
+          <li>
+            <a href="lifestyle.html">
+              Lifestyle
+            </a>
+          </li>
+
+          <li>
+            <a href="opinion.html">
+              Opinion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 The Daily Lens. All rights reserved.
+
+    </div>
+
+  </footer>
+
+</body>
+  </html>
