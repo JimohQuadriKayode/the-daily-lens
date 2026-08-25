@@ -81,7 +81,45 @@
       gap: 14px;
     }
 
-    .logo-icon {
+    .logo-mark {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #166534,
+    #16a34a,
+    #2563eb
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+.logo-mark::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(255,255,255,0.65);
+  border-radius: 50%;
+}
+
+.logo-mark span {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
       width: 58px;
       height: 58px;
       border-radius: 16px;
@@ -730,23 +768,23 @@
 
       <div class="brand">
 
-        <div class="logo-icon">
-          DL
-        </div>
+  <div class="logo-mark">
+    <span>DL</span>
+  </div>
 
-        <div>
+  <div class="brand-text">
 
-          <div class="logo">
-            The Daily Lens
-          </div>
+    <div class="logo">
+      The Daily Lens
+    </div>
 
-          <div class="tagline">
-            News, ideas and stories that matter
-          </div>
+    <div class="tagline">
+      News, ideas and stories that matter
+    </div>
 
-        </div>
+  </div>
 
-      </div>
+  </div>
 
       <div class="header-message">
         🌍 Inform • Inspire • Connect
