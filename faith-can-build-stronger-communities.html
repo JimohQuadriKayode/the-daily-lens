@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Faith Can Build Stronger and More Peaceful Communities | The Daily Lens
+  </title>
+
+  <meta
+    name="description"
+    content="Religious communities can contribute positively to society through knowledge, good character, compassion, service and respect for people of different backgrounds."
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.8;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        #166534,
+        #16a34a,
+        #2563eb
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+      flex-shrink: 0;
+    }
+
+    .logo-mark::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border: 2px solid rgba(255,255,255,0.65);
+      border-radius: 50%;
+    }
+
+    .logo-mark span {
+      color: white;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.2;
+      background: linear-gradient(
+        90deg,
+        #166534,
+        #16a34a,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #2563eb,
+        #0891b2
+      );
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .article-container {
+      max-width: 900px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .article-card {
+      background: white;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.07);
+    }
+
+    .article-header {
+      padding: 45px 45px 30px;
+      background: linear-gradient(
+        135deg,
+        #f5f3ff,
+        #eff6ff,
+        #ecfdf5
+      );
+    }
+
+    .category {
+      display: inline-block;
+      background: #7c3aed;
+      color: white;
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+
+    .article-header h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #111827;
+      margin-bottom: 18px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    .article-meta {
+      padding: 18px 45px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .article-body {
+      padding: 40px 45px 50px;
+    }
+
+    .article-body p {
+      margin-bottom: 24px;
+      font-size: 17px;
+      color: #334155;
+    }
+
+    .article-body h2 {
+      font-size: 27px;
+      color: #111827;
+      margin: 38px 0 15px;
+      line-height: 1.3;
+    }
+
+    .highlight {
+      margin: 30px 0;
+      padding: 25px;
+      background: #f0fdf4;
+      border-left: 5px solid #16a34a;
+      border-radius: 10px;
+      font-size: 19px;
+      font-weight: 700;
+      color: #166534;
+    }
+
+    .article-footer {
+      padding: 30px 45px;
+      background: #f8fafc;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .article-footer strong {
+      color: #111827;
+    }
+
+    .article-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 19px;
+      border-radius: 9px;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .primary {
+      background: #7c3aed;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #6d28d9;
+    }
+
+    .secondary {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .secondary:hover {
+      background: #c7d2fe;
+    }
+
+    .submit-button {
+      background: #16a34a;
+      color: white;
+    }
+
+    .submit-button:hover {
+      background: #15803d;
+    }
+
+    .related {
+      margin-top: 35px;
+    }
+
+    .related h2 {
+      margin-bottom: 18px;
+      color: #111827;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .related-card {
+      background: white;
+      padding: 22px;
+      border-radius: 15px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .related-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .related-card p {
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .related-card a {
+      color: #7c3aed;
+      font-weight: 900;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #111827;
+      color: white;
+      padding: 40px 20px 20px;
+      border-top: 6px solid #16a34a;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: 25px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+
+      .header-inner {
+        padding: 20px 15px;
+      }
+
+      .logo {
+        font-size: 27px;
+      }
+
+      .article-header {
+        padding: 30px 22px 25px;
+      }
+
+      .article-header h1 {
+        font-size: 32px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .article-meta {
+        padding: 16px 22px;
+      }
+
+      .article-body {
+        padding: 30px 22px 35px;
+      }
+
+      .article-body p {
+        font-size: 16px;
+      }
+
+      .article-footer {
+        padding: 25px 22px;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="rainbow"></div>
+
+
+  <div class="top-bar">
+    🕊️ <span>The Daily Lens</span> — Faith, Knowledge and Community
+  </div>
+
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="logo-mark">
+        <span>DL</span>
+      </div>
+
+      <div>
+
+        <div class="logo">
+          The Daily Lens
+        </div>
+
+        <div class="tagline">
+          News, ideas and stories that matter
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="religion.html">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="technology.html">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="business.html">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="lifestyle.html">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="opinion.html">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="article-container">
+
+
+    <article class="article-card">
+
+
+      <header class="article-header">
+
+        <span class="category">
+          RELIGION
+        </span>
+
+        <h1>
+          Faith Can Build Stronger and More Peaceful Communities
+        </h1>
+
+        <p class="article-intro">
+          Religious communities can contribute positively to
+          society through knowledge, good character, compassion,
+          service and respect for people of different backgrounds.
+        </p>
+
+      </header>
+
+
+      <div class="article-meta">
+
+        By The Daily Lens Editorial Team
+        • Religion
+        • August 25, 2026
+
+      </div>
+
+
+      <div class="article-body">
+
+
+        <p>
+          Faith has always played an important role in the lives
+          of millions of people. For many communities, religion
+          provides guidance, moral values, a sense of responsibility
+          and a strong connection with others.
+        </p>
+
+
+        <p>
+          But the positive influence of faith should not stop inside
+          places of worship. Religious values can also encourage
+          people to serve their communities, care for those in need
+          and contribute to a more peaceful society.
+        </p>
+
+
+        <div class="highlight">
+          Faith becomes a powerful force for good when knowledge,
+          compassion and good character are put into action.
+        </div>
+
+
+        <h2>
+          Knowledge and Understanding
+        </h2>
+
+
+        <p>
+          Religious knowledge can help people understand their own
+          beliefs and responsibilities. It can also encourage
+          thoughtful conversations about values, morality and the
+          challenges facing society.
+        </p>
+
+
+        <p>
+          At the same time, learning about people from different
+          religious and cultural backgrounds can reduce unnecessary
+          suspicion and misunderstanding. Knowledge can create room
+          for respectful conversation where ignorance might otherwise
+          create division.
+        </p>
+
+
+        <h2>
+          Serving the Community
+        </h2>
+
+
+        <p>
+          Across Nigeria, religious communities can play a valuable
+          role in supporting people through charity, education,
+          healthcare initiatives, food distribution, counselling and
+          other forms of community service.
+        </p>
+
+
+        <p>
+          These efforts remind us that compassion is not simply an
+          idea to discuss. It is something that can be demonstrated
+          through practical action.
+        </p>
+
+
+        <h2>
+          Respecting Our Differences
+        </h2>
+
+
+        <p>
+          Nigeria is home to people with different religions,
+          traditions, languages and cultures. These differences are
+          part of the country's identity.
+        </p>
+
+
+        <p>
+          Respect does not require everyone to believe the same
+          things. It means recognizing the dignity of other people
+          and allowing communities to live peacefully while holding
+          their own sincere beliefs.
+        </p>
+
+
+        <h2>
+          Building Peace Together
+        </h2>
+
+
+        <p>
+          Strong communities are built when people are willing to
+          help one another beyond the boundaries of religion,
+          ethnicity or background.
+        </p>
+
+
+        <p>
+          Religious leaders, teachers, parents and community members
+          all have an opportunity to promote messages of peace,
+          responsibility, honesty and respect.
+        </p>
+
+
+        <p>
+          When these values are practiced consistently, faith can
+          become an important part of building safer, stronger and
+          more peaceful communities.
+        </p>
+
+
+        <div class="highlight">
+          Different beliefs do not have to mean different humanity.
+          We can hold our convictions while treating one another
+          with dignity, fairness and respect.
+        </div>
+
+
+      </div>
+
+
+      <div class="article-footer">
+
+        <strong>
+          The Daily Lens Editorial Note
+        </strong>
+
+        <p>
+          The views and ideas expressed in this article are intended
+          to encourage constructive discussion, knowledge and
+          peaceful coexistence.
+        </p>
+
+
+        <div class="article-actions">
+
+          <a
+            href="religion.html"
+            class="button primary"
+          >
+            ← Back to Religion
+          </a>
+
+          <a
+            href="submit.html"
+            class="button submit-button"
+          >
+            ✍️ Submit an Article
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </article>
+
+
+    <section class="related">
+
+      <h2>
+        More from Religion
+      </h2>
+
+
+      <div class="related-grid">
+
+
+        <div class="related-card">
+
+          <h3>
+            Faith, Respect and Community
+          </h3>
+
+          <p>
+            Exploring how religious values can encourage
+            cooperation, compassion and peaceful coexistence.
+          </p>
+
+          <a href="religion.html">
+            Explore Religion →
+          </a>
+
+        </div>
+
+
+        <div class="related-card">
+
+          <h3>
+            The Importance of Religious Knowledge
+          </h3>
+
+          <p>
+            Why learning and thoughtful discussion can help
+            communities understand one another better.
+          </p>
+
+          <a href="religion.html">
+            Explore Religion →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+
+    <div class="footer-inner">
+
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="technology.html">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="business.html">
+              Business
+            </a>
+          </li>
+
+          <li>
+            <a href="lifestyle.html">
+              Lifestyle
+            </a>
+          </li>
+
+          <li>
+            <a href="opinion.html">
+              Opinion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 The Daily Lens. All rights reserved.
+
+    </div>
+
+
+  </footer>
+
+
+</body>
+
+</html>
