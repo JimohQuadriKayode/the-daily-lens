@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Say No to Maulid An-Nabiyy | The Daily Lens
+  </title>
+
+  <meta
+    name="description"
+    content="A reminder about Maulid An-Nabiyy based on the Qur'an, Sunnah and the understanding of the Salaf."
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.8;
+    }
+
+    .rainbow {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+      );
+    }
+
+    .top-bar {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .top-bar span {
+      color: #facc15;
+    }
+
+    header {
+      background: white;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(
+        135deg,
+        #166534,
+        #16a34a,
+        #2563eb
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(
+        90deg,
+        #166534,
+        #16a34a,
+        #2563eb
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #166534,
+        #16a34a,
+        #2563eb
+      );
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      list-style: none;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 16px 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .article-card {
+      background: white;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.07);
+    }
+
+    .article-header {
+      padding: 45px 45px 30px;
+      background: linear-gradient(
+        135deg,
+        #ecfdf5,
+        #eff6ff,
+        #f5f3ff
+      );
+    }
+
+    .category {
+      display: inline-block;
+      background: #166534;
+      color: white;
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+
+    .article-header h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #111827;
+      margin-bottom: 18px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    .article-meta {
+      padding: 18px 45px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .article-body {
+      padding: 40px 45px 50px;
+    }
+
+    .article-body p {
+      margin-bottom: 24px;
+      font-size: 17px;
+      color: #334155;
+    }
+
+    .article-body h2 {
+      font-size: 27px;
+      color: #111827;
+      margin: 38px 0 15px;
+      line-height: 1.3;
+    }
+
+    .article-body h3 {
+      font-size: 21px;
+      color: #166534;
+      margin: 25px 0 10px;
+    }
+
+    .highlight {
+      margin: 30px 0;
+      padding: 25px;
+      background: #f0fdf4;
+      border-left: 5px solid #16a34a;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #166534;
+    }
+
+    .evidence {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 8px;
+      color: #334155;
+    }
+
+    .article-body ol {
+      margin: 15px 0 25px 25px;
+    }
+
+    .article-body li {
+      margin-bottom: 12px;
+      color: #334155;
+      font-size: 17px;
+    }
+
+    .source {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .article-footer {
+      padding: 30px 45px;
+      background: #f8fafc;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .article-footer strong {
+      color: #111827;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #166534;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .back-button:hover {
+      background: #15803d;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #111827;
+      color: white;
+      padding: 40px 20px 20px;
+      border-top: 6px solid #16a34a;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 7px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #facc15;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: 25px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+
+      .article-header {
+        padding: 30px 22px 25px;
+      }
+
+      .article-header h1 {
+        font-size: 32px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .article-meta {
+        padding: 16px 22px;
+      }
+
+      .article-body {
+        padding: 30px 22px 35px;
+      }
+
+      .article-body p,
+      .article-body li {
+        font-size: 16px;
+      }
+
+      .article-footer {
+        padding: 25px 22px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class="rainbow"></div>
+
+  <div class="top-bar">
+    🕊️ <span>The Daily Lens</span> — Faith, Knowledge and Community
+  </div>
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="logo-icon">
+        DL
+      </div>
+
+      <div>
+
+        <div class="logo">
+          The Daily Lens
+        </div>
+
+        <div class="tagline">
+          News, ideas and stories that matter
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <nav>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="news.html">
+          News
+        </a>
+      </li>
+
+      <li>
+        <a href="sports.html">
+          Sports
+        </a>
+      </li>
+
+      <li>
+        <a href="religion.html">
+          Religion
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="technology.html">
+          Technology
+        </a>
+      </li>
+
+      <li>
+        <a href="business.html">
+          Business
+        </a>
+      </li>
+
+      <li>
+        <a href="lifestyle.html">
+          Lifestyle
+        </a>
+      </li>
+
+      <li>
+        <a href="opinion.html">
+          Opinion
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main class="container">
+
+    <article class="article-card">
+
+      <header class="article-header">
+
+        <span class="category">
+          RELIGION
+        </span>
+
+        <h1>
+          Say No to Maulid An-Nabiyy
+        </h1>
+
+        <p class="article-intro">
+          A reminder based on the Qur'an, Sunnah, and the
+          understanding of the Salaf.
+        </p>
+
+      </header>
+
+
+      <div class="article-meta">
+
+        By Abu Mus'ab
+        • Religion
+        • August 25, 2026
+
+      </div>
+
+
+      <div class="article-body">
+                <h2>
+          1. What is Maulid An-Nabiyy?
+        </h2>
+
+        <p>
+          Maulid An-Nabiyy refers to the celebration of the
+          Prophet Muhammad's ﷺ birthday, commonly associated
+          with 12th Rabi' al-Awwal.
+        </p>
+
+        <p>
+          Such gatherings may involve recitation of poems about
+          the Prophet ﷺ, singing, feeding people and, in some
+          places, drumming or other activities.
+        </p>
+
+        <p>
+          The intention behind these gatherings is often to
+          express love for the Prophet ﷺ. However, love for the
+          Prophet should be expressed according to the guidance
+          of Allah and His Messenger ﷺ.
+        </p>
+
+
+        <h2>
+          2. Was Maulid Celebrated by the Prophet ﷺ and the Sahabah?
+        </h2>
+
+        <p>
+          One of the central questions concerning Maulid is
+          whether the Prophet ﷺ himself, his Companions, or the
+          earliest generations of Muslims celebrated his birthday
+          as a religious occasion.
+        </p>
+
+        <div class="evidence">
+
+          <p>
+            <strong>
+              The Prophet ﷺ did not establish an annual birthday
+              celebration.
+            </strong>
+          </p>
+
+          <p>
+            During the 23 years of his prophethood, there is no
+            established report that he gathered his Companions
+            annually to celebrate his birth.
+          </p>
+
+        </div>
+
+
+        <p>
+          The Companions were among the people who loved the
+          Prophet ﷺ most. Abu Bakr, Umar, Uthman, Ali and the
+          other Companions followed his guidance closely.
+        </p>
+
+        <p>
+          The argument presented by this view is that if an annual
+          religious celebration of his birth had been prescribed,
+          the earliest generations would have been among the first
+          to practise it.
+        </p>
+
+
+        <div class="evidence">
+
+          <p>
+            The Prophet ﷺ said:
+          </p>
+
+          <p>
+            <em>
+              "Whoever introduces into this matter of ours that
+              which is not from it, it is rejected."
+            </em>
+          </p>
+
+          <p class="source">
+            — Sahih al-Bukhari and Sahih Muslim
+          </p>
+
+        </div>
+
+
+        <h2>
+          3. Why Say No?
+        </h2>
+
+
+        <h3>
+          a. The Concern About Religious Innovation
+        </h3>
+
+        <p>
+          Those who reject the celebration of Maulid argue that
+          acts of worship require evidence from the Qur'an and
+          Sunnah.
+        </p>
+
+        <p>
+          Allah says:
+        </p>
+
+        <div class="evidence">
+
+          <p>
+            <em>
+              "This day I have perfected for you your religion."
+            </em>
+          </p>
+
+          <p class="source">
+            — Qur'an 5:3
+          </p>
+
+        </div>
+
+        <p>
+          From this perspective, introducing a new annual religious
+          celebration is considered an addition to religious
+          practice that was not established by the Prophet ﷺ or
+          his Companions.
+        </p>
+
+
+        <h3>
+          b. Avoiding Exaggeration
+        </h3>
+
+        <p>
+          Another concern raised by scholars who oppose Maulid is
+          that some forms of celebration may contain excessive
+          praise or practices that go beyond what is established
+          in the Sunnah.
+        </p>
+
+        <div class="evidence">
+
+          <p>
+            The Prophet ﷺ warned:
+          </p>
+
+          <p>
+            <em>
+              "Do not exaggerate about me as the Christians
+              exaggerated about the son of Maryam."
+            </em>
+          </p>
+
+          <p class="source">
+            — Sahih al-Bukhari
+          </p>
+
+        </div>
+
+
+        <h3>
+          c. Uncertainty About the Exact Birth Date
+        </h3>
+
+        <p>
+          Historians and scholars have differed regarding the
+          exact date on which the Prophet Muhammad ﷺ was born.
+                  <h2>
+          5. What Should We Do Instead?
+        </h2>
+
+        <p>
+          If we want to honour and love the Prophet Muhammad ﷺ,
+          there are many established ways to do so throughout the
+          year.
+        </p>
+
+        <ol>
+
+          <li>
+            <strong>Learn his Sunnah</strong> and make an effort
+            to live according to his teachings.
+          </li>
+
+          <li>
+            <strong>Send abundant Salawat</strong> upon the
+            Prophet ﷺ, such as:
+            <em>Allahumma salli 'ala Muhammad.</em>
+          </li>
+
+          <li>
+            <strong>Fast on Mondays.</strong> The Prophet ﷺ
+            mentioned Monday in connection with the day on which
+            he was born and the day revelation came to him.
+          </li>
+
+          <li>
+            <strong>Teach his Seerah</strong> to our children and
+            help them understand his character, teachings and
+            mission.
+          </li>
+
+          <li>
+            <strong>Call to Tawheed</strong> and uphold the
+            central message of Islam that the Prophet ﷺ brought.
+          </li>
+
+        </ol>
+
+
+        <div class="evidence">
+
+          <p>
+            The Prophet ﷺ was asked about fasting on Monday and
+            said:
+          </p>
+
+          <p>
+            <em>
+              "That is the day I was born and the day revelation
+              came to me."
+            </em>
+          </p>
+
+          <p class="source">
+            — Sahih Muslim
+          </p>
+
+        </div>
+
+
+        <h2>
+          Conclusion
+        </h2>
+
+        <p>
+          Saying "No to Maulid An-Nabiyy" is not saying "No to the
+          Prophet ﷺ." Rather, those who hold this position see it
+          as saying yes to following the Sunnah and avoiding
+          religious innovations.
+        </p>
+
+        <p>
+          The safest path, according to this understanding, is to
+          follow the guidance of the Prophet ﷺ and the example of
+          his Companions.
+        </p>
+
+        <div class="highlight">
+
+          <strong>
+            Love for the Prophet ﷺ should be shown through
+            obedience, learning, good character and following
+            his guidance.
+          </strong>
+
+        </div>
+
+
+        <div class="evidence">
+
+          <p>
+            Allah says:
+          </p>
+
+          <p>
+            <em>
+              "And whoever opposes the Messenger after guidance
+              has become clear to him and follows other than the
+              way of the believers — We will give him what he has
+              taken and drive him into Hell."
+            </em>
+          </p>
+
+          <p class="source">
+            — Qur'an 4:115
+          </p>
+
+        </div>
+
+
+        <p>
+          May Allah grant us sincerity, beneficial knowledge and
+          the ability to follow the Sunnah. Ameen.
+        </p>
+
+
+        <p>
+          <strong>
+            Compiled by Abu Mus'ab
+          </strong>
+          <br>
+          <span class="source">
+            abumusab0411@gmail.com
+          </span>
+        </p>
+              </div>
+
+      <div class="article-footer">
+
+        <strong>
+          The Daily Lens Editorial Note
+        </strong>
+
+        <p>
+          This article presents a particular Islamic scholarly
+          position concerning the celebration of Maulid An-Nabiyy.
+          Readers are encouraged to study the Qur'an, authentic
+          Sunnah and scholarly discussions carefully.
+        </p>
+
+        <a
+          href="religion.html"
+          class="back-button"
+        >
+          ← Back to Religion
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner">
+
+
+      <div>
+
+        <h3>
+          The Daily Lens
+        </h3>
+
+        <p>
+          News, ideas and stories that matter.
+          We aim to inform, inspire and connect
+          our readers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Explore
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="news.html">
+              News
+            </a>
+          </li>
+
+          <li>
+            <a href="sports.html">
+              Sports
+            </a>
+          </li>
+
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Sections
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="education.html">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="technology.html">
+              Technology
+            </a>
+          </li>
+
+          <li>
+            <a href="business.html">
+              Business
+            </a>
+          </li>
+
+          <li>
+            <a href="lifestyle.html">
+              Lifestyle
+            </a>
+          </li>
+
+          <li>
+            <a href="opinion.html">
+              Opinion
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 The Daily Lens. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
+        
+          
