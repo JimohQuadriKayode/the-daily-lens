@@ -739,75 +739,81 @@
     }
 
 
-    /* NEWSLETTER */
+/* NEWSLETTER */
 
-    .newsletter {
-      padding: 40px;
+.newsletter {
+  padding: 40px;
+  border-radius: 22px;
+  color: white;
+  text-align: center;
+  margin-bottom: 45px;
+  background:
+    linear-gradient(
+      110deg,
+      #0f766e,
+      #0891b2,
+      #2563eb,
+      #7c3aed
+    );
+}
 
-      border-radius: 22px;
+.newsletter h2 {
+  font-size: 29px;
+  margin-bottom: 7px;
+}
 
-      color: white;
+.newsletter p {
+  color: #e0f2fe;
+  margin-bottom: 20px;
+}
 
-      text-align: center;
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
 
-      margin-bottom: 45px;
+.newsletter input {
+  width: 55%;
+  max-width: 450px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
 
-      background:
-        linear-gradient(
-          110deg,
-          #0f766e,
-          #0891b2,
-          #2563eb,
-          #7c3aed
-        );
-    }
+.newsletter button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #f97316;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
 
-    .newsletter h2 {
-      font-size: 29px;
+.newsletter button:hover {
+  background: #ea580c;
+}
 
-      margin-bottom: 7px;
-    }
+@media (max-width: 850px) {
 
-    .newsletter p {
-      color: #e0f2fe;
+  .newsletter form {
+    flex-direction: column;
+  }
 
-      margin-bottom: 20px;
-    }
+  .newsletter input {
+    width: 100%;
+    max-width: none;
+  }
 
-    .newsletter input {
-      width: 55%;
+  .newsletter button {
+    width: 100%;
+  }
 
-      max-width: 450px;
-
-      padding: 14px;
-
-      border: none;
-
-      border-radius: 8px;
-
-      outline: none;
-
-      font-size: 14px;
-    }
-
-    .newsletter button {
-      padding: 14px 22px;
-
-      border: none;
-
-      border-radius: 8px;
-
-      background: #f97316;
-
-      color: white;
-
-      font-weight: 900;
-
-      cursor: pointer;
-
-      margin-left: 5px;
-    }
-
+}
 
     /* FOOTER */
 
