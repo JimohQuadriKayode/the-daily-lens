@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MDV12HFRZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MDV12HFRZ"></script>
 
-  gtag('config', 'G-8MDV12HFRZ');
-</script>
-  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-8MDV12HFRZ');
+  </script>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>The Daily Lens | News, Ideas and Stories That Matter</title>
 
-  <meta name="description" content="The Daily Lens brings you news, sports, religion, education, technology, business, lifestyle and thoughtful opinions.">
+  <meta
+    name="description"
+    content="The Daily Lens brings you news, sports, religion, education, technology, business, lifestyle and thoughtful opinions."
+  >
 
   <style>
 
@@ -42,6 +52,7 @@
 
     .rainbow {
       height: 7px;
+
       background: linear-gradient(
         90deg,
         #ef4444,
@@ -80,9 +91,11 @@
       max-width: 1180px;
       margin: auto;
       padding: 25px 20px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       gap: 25px;
     }
 
@@ -93,66 +106,62 @@
     }
 
     .logo-mark {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
-  background: linear-gradient(
-    135deg,
-    #166534,
-    #16a34a,
-    #2563eb
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
-}
+      width: 64px;
+      height: 64px;
 
-.logo-mark::before {
-  content: "";
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  border: 2px solid rgba(255,255,255,0.65);
-  border-radius: 50%;
-}
+      border-radius: 18px;
 
-.logo-mark span {
-  color: white;
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  position: relative;
-  z-index: 2;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-}
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
       background: linear-gradient(
         135deg,
-        #ef4444,
-        #f97316,
-        #8b5cf6,
+        #166534,
+        #16a34a,
         #2563eb
       );
-      color: white;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 25px;
+
+      position: relative;
+
+      box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.20);
+    }
+
+    .logo-mark::before {
+      content: "";
+
+      position: absolute;
+
+      width: 48px;
+      height: 48px;
+
+      border: 2px solid rgba(255,255,255,0.65);
+
+      border-radius: 50%;
+    }
+
+    .logo-mark span {
+      color: white;
+
+      font-size: 24px;
       font-weight: 900;
-      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+
+      letter-spacing: -2px;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
     }
 
     .logo {
       font-size: 34px;
       font-weight: 900;
+
       background: linear-gradient(
         90deg,
         #ef4444,
@@ -160,8 +169,10 @@
         #7c3aed,
         #2563eb
       );
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
       background-clip: text;
     }
 
@@ -173,10 +184,14 @@
     .header-message {
       background: #fff7ed;
       color: #c2410c;
+
       padding: 10px 15px;
+
       border-radius: 30px;
+
       font-size: 13px;
       font-weight: bold;
+
       border: 1px solid #fed7aa;
     }
 
@@ -189,26 +204,39 @@
         #2563eb,
         #0891b2
       );
-      box-shadow: 0 5px 18px rgba(37, 99, 235, 0.2);
+
+      box-shadow:
+        0 5px 18px rgba(37, 99, 235, 0.2);
+
       overflow-x: auto;
     }
 
     nav ul {
       max-width: 1180px;
       margin: auto;
+
       display: flex;
+
       list-style: none;
+
       padding: 0 15px;
+
       white-space: nowrap;
     }
 
     nav a {
       display: block;
+
       color: white;
+
       text-decoration: none;
+
       padding: 16px 15px;
+
       font-size: 14px;
+
       font-weight: bold;
+
       transition: 0.25s;
     }
 
@@ -220,556 +248,21 @@
       background: #f97316;
     }
 
-    /* MAIN */
-
-    .container {
-      max-width: 1180px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
-
-    /* WELCOME */
-
-    .welcome {
-      background:
-        linear-gradient(
-          135deg,
-          rgba(239, 68, 68, 0.08),
-          rgba(124, 58, 237, 0.08),
-          rgba(6, 182, 212, 0.08)
-        );
-      padding: 40px;
-      border-radius: 22px;
-      margin-bottom: 35px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-    }
-
-    .welcome h1 {
-      font-size: 42px;
-      color: #111827;
-      margin-bottom: 12px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .welcome h1 span {
-      background: linear-gradient(
-        90deg,
-        #ef4444,
-        #f97316,
-        #7c3aed,
-        #2563eb
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .welcome p {
-      max-width: 780px;
-      color: #475569;
-      font-size: 17px;
-      position: relative;
-      z-index: 2;
-    }
-
-    /* SECTION TITLE */
-
-    .section-title {
-      margin-bottom: 20px;
-    }
-
-    .section-title h2 {
-      font-size: 28px;
-      color: #111827;
-    }
-
-    .section-title p {
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    .title-line {
-      display: flex;
-      gap: 4px;
-      margin-top: 8px;
-    }
-
-    .title-line span {
-      display: block;
-      height: 5px;
-      border-radius: 10px;
-    }
-
-    .line-one {
-      width: 40px;
-      background: #ef4444;
-    }
-
-    .line-two {
-      width: 30px;
-      background: #f97316;
-    }
-
-    .line-three {
-      width: 20px;
-      background: #7c3aed;
-    }
-
-    /* FEATURED */
-
-    .featured {
-      min-height: 310px;
-      padding: 45px;
-      border-radius: 25px;
-      margin-bottom: 40px;
-      color: white;
-      position: relative;
-      overflow: hidden;
-      background:
-        linear-gradient(
-          120deg,
-          #be123c,
-          #7c3aed 48%,
-          #2563eb
-        );
-      box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
-    }
-
-    .featured-content {
-      max-width: 780px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .featured-label {
-      display: inline-block;
-      background: #facc15;
-      color: #713f12;
-      padding: 6px 13px;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 900;
-      margin-bottom: 15px;
-    }
-
-    .featured h2 {
-      font-size: 34px;
-      line-height: 1.2;
-      margin-bottom: 13px;
-    }
-
-    .featured p {
-      color: #ede9fe;
-      margin-bottom: 23px;
-      font-size: 16px;
-    }
-
-    .read-button {
-      display: inline-block;
-      background: white;
-      color: #6d28d9;
-      padding: 12px 22px;
-      border-radius: 9px;
-      text-decoration: none;
-      font-weight: 900;
-      transition: 0.25s;
-    }
-
-    .read-button:hover {
-      background: #facc15;
-      color: #713f12;
-    }
-
-    /* STORY GRID */
-
-    .stories-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-bottom: 45px;
-    }
-
-    .story-card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 7px 22px rgba(15, 23, 42, 0.07);
-      transition: 0.3s;
-    }
-
-    .story-card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.13);
-    }
-
-    .card-top {
-      height: 95px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 42px;
-      color: white;
-    }
-
-    .card-news {
-      background: linear-gradient(135deg, #ef4444, #f97316);
-    }
-
-    .card-sports {
-      background: linear-gradient(135deg, #16a34a, #22c55e);
-    }
-
-    .card-religion {
-      background: linear-gradient(135deg, #7c3aed, #a855f7);
-    }
-
-    .card-education {
-      background: linear-gradient(135deg, #0891b2, #06b6d4);
-    }
-
-    .card-technology {
-      background: linear-gradient(135deg, #2563eb, #4f46e5);
-    }
-
-    .card-business {
-      background: linear-gradient(135deg, #059669, #16a34a);
-    }
-
-    .card-lifestyle {
-      background: linear-gradient(135deg, #db2777, #ec4899);
-    }
-
-    .card-opinion {
-      background: linear-gradient(135deg, #ea580c, #f59e0b);
-    }
-
-    .story-content {
-      padding: 24px;
-    }
-
-    .category {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      color: white;
-      font-size: 11px;
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-
-    .news {
-      background: #ef4444;
-    }
-
-    .sports {
-      background: #16a34a;
-    }
-
-    .religion {
-      background: #7c3aed;
-    }
-
-    .education {
-      background: #0891b2;
-    }
-
-    .technology {
-      background: #2563eb;
-    }
-
-    .business {
-      background: #059669;
-    }
-
-    .lifestyle {
-      background: #db2777;
-    }
-
-    .opinion {
-      background: #ea580c;
-    }
-
-    .story-content h3 {
-      font-size: 20px;
-      color: #111827;
-      margin-bottom: 9px;
-    }
-
-    .story-content p {
-      color: #64748b;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .article-link {
-      text-decoration: none;
-      font-weight: 900;
-      font-size: 14px;
-    }
-
-    .link-red {
-      color: #ef4444;
-    }
-
-    .link-green {
-      color: #16a34a;
-    }
-
-    .link-purple {
-      color: #7c3aed;
-    }
-
-    .link-cyan {
-      color: #0891b2;
-    }
-
-    .link-blue {
-      color: #2563eb;
-    }
-
-    .link-darkgreen {
-      color: #059669;
-    }
-
-    .link-pink {
-      color: #db2777;
-    }
-
-    .link-orange {
-      color: #ea580c;
-    }
-
-    /* WHY SECTION */
-
-    .why-section {
-      background: white;
-      padding: 40px;
-      border-radius: 22px;
-      margin-bottom: 40px;
-      border: 1px solid #e5e7eb;
-      text-align: center;
-    }
-
-    .why-section h2 {
-      font-size: 29px;
-      color: #111827;
-    }
-
-    .why-section > p {
-      max-width: 700px;
-      margin: 8px auto 28px;
-      color: #64748b;
-    }
-
-    .values {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .value {
-      padding: 25px;
-      border-radius: 16px;
-    }
-
-    .value:nth-child(1) {
-      background: #fff1f2;
-      border: 1px solid #fecdd3;
-    }
-
-    .value:nth-child(2) {
-      background: #f5f3ff;
-      border: 1px solid #ddd6fe;
-    }
-
-    .value:nth-child(3) {
-      background: #ecfeff;
-      border: 1px solid #a5f3fc;
-    }
-
-    .value-icon {
-      font-size: 34px;
-      margin-bottom: 8px;
-    }
-
-    .value h3 {
-      margin-bottom: 6px;
-      color: #111827;
-    }
-
-    .value p {
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    /* NEWSLETTER */
-
-    .newsletter {
-      padding: 40px;
-      border-radius: 22px;
-      color: white;
-      text-align: center;
-      margin-bottom: 45px;
-      background:
-        linear-gradient(
-          110deg,
-          #0f766e,
-          #0891b2,
-          #2563eb,
-          #7c3aed
-        );
-    }
-
-    .newsletter h2 {
-      font-size: 29px;
-      margin-bottom: 7px;
-    }
-
-    .newsletter p {
-      color: #e0f2fe;
-      margin-bottom: 20px;
-    }
-
-    .newsletter input {
-      width: 55%;
-      max-width: 450px;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      font-size: 14px;
-    }
-
-    .newsletter button {
-      padding: 14px 22px;
-      border: none;
-      border-radius: 8px;
-      background: #f97316;
-      color: white;
-      font-weight: 900;
-      cursor: pointer;
-      margin-left: 5px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #111827;
-      color: white;
-      border-top: 6px solid #f97316;
-    }
-
-    .footer-inner {
-      max-width: 1180px;
-      margin: auto;
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 35px;
-    }
-
-    footer h3 {
-      margin-bottom: 12px;
-      font-size: 18px;
-    }
-
-    footer p {
-      color: #9ca3af;
-      font-size: 14px;
-      max-width: 450px;
-    }
-
-    footer ul {
-      list-style: none;
-    }
-
-    footer li {
-      margin-bottom: 7px;
-    }
-
-    footer a {
-      color: #d1d5db;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    footer a:hover {
-      color: #facc15;
-    }
-
-    .copyright {
-      max-width: 1180px;
-      margin: auto;
-      padding: 18px 20px;
-      border-top: 1px solid #374151;
-      text-align: center;
-      color: #9ca3af;
-      font-size: 13px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 850px) {
-
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .header-message {
-        width: 100%;
-        text-align: center;
-      }
-
-      .welcome h1 {
-        font-size: 32px;
-      }
-
-      .featured {
-        padding: 32px 25px;
-      }
-
-      .featured h2 {
-        font-size: 27px;
-      }
-
-      .stories-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .values {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .newsletter input {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      .newsletter button {
-        width: 100%;
-        margin-left: 0;
-      }
-
-    }
-
   </style>
+
 </head>
+
 
 <body>
 
   <div class="rainbow"></div>
 
+
   <div class="top-bar">
-    📰 <span>The Daily Lens</span> — News, Ideas and Stories That Matter
+
+    📰 <span>The Daily Lens</span>
+    — News, Ideas and Stories That Matter
+
   </div>
 
 
@@ -779,23 +272,25 @@
 
       <div class="brand">
 
-  <div class="logo-mark">
-    <span>DL</span>
-  </div>
+        <div class="logo-mark">
+          <span>DL</span>
+        </div>
 
-  <div class="brand-text">
 
-    <div class="logo">
-      The Daily Lens
-    </div>
+        <div class="brand-text">
 
-    <div class="tagline">
-      News, ideas and stories that matter
-    </div>
+          <div class="logo">
+            The Daily Lens
+          </div>
 
-  </div>
+          <div class="tagline">
+            News, ideas and stories that matter
+          </div>
 
-  </div>
+        </div>
+
+      </div>
+
 
       <div class="header-message">
         🌍 Inform • Inspire • Connect
@@ -806,67 +301,16 @@
   </header>
 
 
-<nav>
+  <nav>
 
-  <ul>
+    <ul>
 
-    <li>
-      <a href="index.html" class="active">
-        Home
-      </a>
-    </li>
+      <li>
+        <a href="index.html" class="active">
+          Home
+        </a>
+      </li>
 
-    <li>
-      <a href="news.html">
-        News
-      </a>
-    </li>
-
-    <li>
-      <a href="sports.html">
-        Sports
-      </a>
-    </li>
-
-    <li>
-      <a href="religion.html">
-        Religion
-      </a>
-    </li>
-
-    <li>
-      <a href="education.html">
-        Education
-      </a>
-    </li>
-
-    <li>
-      <a href="technology.html">
-        Technology
-      </a>
-    </li>
-
-    <li>
-      <a href="business.html">
-        Business
-      </a>
-    </li>
-
-    <li>
-      <a href="lifestyle.html">
-        Lifestyle
-      </a>
-    </li>
-
-    <li>
-      <a href="opinion.html">
-        Opinion
-      </a>
-    </li>
-
-  </ul>
-
-</nav>
       <li>
         <a href="news.html">
           News
@@ -880,54 +324,54 @@
       </li>
 
       <li>
-        <a href="#religion">
+        <a href="religion.html">
           Religion
         </a>
       </li>
 
       <li>
-        <a href="#education">
+        <a href="education.html">
           Education
         </a>
       </li>
 
       <li>
-        <a href="#technology">
+        <a href="technology.html">
           Technology
         </a>
       </li>
 
       <li>
-        <a href="#business">
+        <a href="business.html">
           Business
         </a>
       </li>
 
       <li>
-        <a href="#lifestyle">
+        <a href="lifestyle.html">
           Lifestyle
         </a>
       </li>
 
       <li>
-        <a href="#opinion">
+        <a href="opinion.html">
           Opinion
         </a>
       </li>
-  
+
       <li>
         <a href="submit.html">
-        ✍️ Submit an Article
-       </a>
+          ✍️ Submit an Article
+        </a>
       </li>
 
     </ul>
 
   </nav>
+    <main class="container">
 
 
-  <main class="container">
-
+    <!-- WELCOME -->
 
     <section class="welcome">
 
@@ -946,6 +390,8 @@
     </section>
 
 
+    <!-- FEATURED STORY -->
+
     <section>
 
       <div class="section-title">
@@ -959,9 +405,11 @@
         </p>
 
         <div class="title-line">
+
           <span class="line-one"></span>
           <span class="line-two"></span>
           <span class="line-three"></span>
+
         </div>
 
       </div>
@@ -976,17 +424,20 @@
           </span>
 
           <h2>
-            Stories That Inform, Inspire and Connect Us
+            Faith Can Build Stronger and More Peaceful Communities
           </h2>
 
           <p>
-            The Daily Lens brings together important stories,
-            useful knowledge and different perspectives on the
-            issues that matter to our communities.
+            Explore how faith, understanding and respect can
+            help build stronger communities and encourage
+            peaceful coexistence.
           </p>
 
-          <a href="#" class="read-button">
-            Read More →
+          <a
+            href="faith-can-build-stronger-communities.html"
+            class="read-button"
+          >
+            Read Story →
           </a>
 
         </div>
@@ -995,6 +446,8 @@
 
     </section>
 
+
+    <!-- EXPLORE SECTIONS -->
 
     <section>
 
@@ -1009,9 +462,11 @@
         </p>
 
         <div class="title-line">
+
           <span class="line-one"></span>
           <span class="line-two"></span>
           <span class="line-three"></span>
+
         </div>
 
       </div>
@@ -1043,7 +498,10 @@
               events and stories happening around you.
             </p>
 
-            <a href="news.html" class="article-link link-red">
+            <a
+              href="news.html"
+              class="article-link link-red"
+            >
               Explore News →
             </a>
 
@@ -1075,7 +533,10 @@
               competitions, teams, players and major sporting stories.
             </p>
 
-            <a href="sports.html" class="article-link link-green">
+            <a
+              href="sports.html"
+              class="article-link link-green"
+            >
               Explore Sports →
             </a>
 
@@ -1107,7 +568,10 @@
               and thoughtful discussions about faith.
             </p>
 
-            <a href= "religion.html" class="article-link link-purple">
+            <a
+              href="religion.html"
+              class="article-link link-purple"
+            >
               Explore Religion →
             </a>
 
@@ -1139,7 +603,10 @@
               resources and stories from the education sector.
             </p>
 
-            <a href="education.html" class="article-link link-cyan">
+            <a
+              href="education.html"
+              class="article-link link-cyan"
+            >
               Explore Education →
             </a>
 
@@ -1171,7 +638,10 @@
               and practical tips for everyday life.
             </p>
 
-            <a href="technology.html" class="article-link link-blue">
+            <a
+              href="technology.html"
+              class="article-link link-blue"
+            >
               Explore Technology →
             </a>
 
@@ -1203,7 +673,10 @@
               and opportunities for growth.
             </p>
 
-            <a href="business.html" class="article-link link-darkgreen">
+            <a
+              href="business.html"
+              class="article-link link-darkgreen"
+            >
               Explore Business →
             </a>
 
@@ -1231,11 +704,14 @@
             </h3>
 
             <p>
-                            Discover stories covering people, culture,
+              Discover stories covering people, culture,
               lifestyle and everyday experiences.
             </p>
 
-            <a href="lifestyle.html" class="article-link link-pink">
+            <a
+              href="lifestyle.html"
+              class="article-link link-pink"
+            >
               Explore Lifestyle →
             </a>
 
@@ -1267,7 +743,10 @@
               on issues affecting our communities.
             </p>
 
-            <a href="opinion.html" class="article-link link-orange">
+            <a
+              href="opinion.html"
+              class="article-link link-orange"
+            >
               Explore Opinion →
             </a>
 
@@ -1278,9 +757,8 @@
 
       </div>
 
-    </section>
-
-
+     </section>
+         
     <!-- WHAT WE STAND FOR -->
 
     <section class="why-section">
@@ -1296,6 +774,7 @@
 
 
       <div class="values">
+
 
         <div class="value">
 
@@ -1349,6 +828,7 @@
           </p>
 
         </div>
+
 
       </div>
 
@@ -1432,6 +912,12 @@
             </a>
           </li>
 
+          <li>
+            <a href="religion.html">
+              Religion
+            </a>
+          </li>
+
         </ul>
 
       </div>
@@ -1446,26 +932,32 @@
         <ul>
 
           <li>
-            <a href="#religion">
-              Religion
-            </a>
-          </li>
-
-          <li>
-            <a href="#education">
+            <a href="education.html">
               Education
             </a>
           </li>
 
           <li>
-            <a href="#technology">
+            <a href="technology.html">
               Technology
             </a>
           </li>
 
           <li>
-            <a href="#business">
+            <a href="business.html">
               Business
+            </a>
+          </li>
+
+          <li>
+            <a href="lifestyle.html">
+              Lifestyle
+            </a>
+          </li>
+
+          <li>
+            <a href="opinion.html">
+              Opinion
             </a>
           </li>
 
@@ -1478,12 +970,14 @@
 
 
     <div class="copyright">
+
       © 2026 The Daily Lens. All rights reserved.
+
     </div>
 
   </footer>
 
 
 </body>
-        </html>
-   
+
+</html>
