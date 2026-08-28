@@ -945,6 +945,41 @@
 
     }
 
+    /* LATEST STORIES IMAGE FIX */
+
+.latest-card {
+  overflow: hidden;
+}
+
+.latest-image {
+  height: 180px !important;
+  min-height: 0 !important;
+  overflow: hidden;
+}
+
+.latest-image img {
+  width: 100% !important;
+  height: 180px !important;
+  min-height: 0 !important;
+  max-height: 180px !important;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 850px) {
+
+  .latest-image {
+    height: 160px !important;
+    min-height: 0 !important;
+  }
+
+  .latest-image img {
+    height: 160px !important;
+    max-height: 160px !important;
+  }
+
+}
+
   </style>
 
 </head>
