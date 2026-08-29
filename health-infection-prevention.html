@@ -35,10 +35,6 @@
 
   <style>
 
-    /* =========================
-       BASIC RESET
-    ========================= */
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -56,10 +52,7 @@
       line-height: 1.7;
     }
 
-
-    /* =========================
-       RAINBOW TOP LINE
-    ========================= */
+    /* RAINBOW */
 
     .rainbow {
       height: 7px;
@@ -77,10 +70,7 @@
       );
     }
 
-
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
       background: white;
@@ -137,10 +127,7 @@
       background: #1d4ed8;
     }
 
-
-    /* =========================
-       NAVIGATION
-    ========================= */
+    /* NAVIGATION */
 
     nav {
       background: linear-gradient(
@@ -183,10 +170,7 @@
       background: rgba(255,255,255,0.18);
     }
 
-
-    /* =========================
-       ARTICLE CONTAINER
-    ========================= */
+    /* ARTICLE CONTAINER */
 
     .article-container {
       max-width: 900px;
@@ -196,10 +180,7 @@
       padding: 0 20px;
     }
 
-
-    /* =========================
-       CATEGORY
-    ========================= */
+    /* CATEGORY */
 
     .category {
       display: inline-block;
@@ -217,10 +198,7 @@
       margin-bottom: 15px;
     }
 
-
-    /* =========================
-       ARTICLE TITLE
-    ========================= */
+    /* TITLE */
 
     .article-title {
       font-size: 44px;
@@ -232,10 +210,7 @@
       margin-bottom: 15px;
     }
 
-
-    /* =========================
-       ARTICLE INTRO
-    ========================= */
+    /* INTRO */
 
     .article-intro {
       font-size: 19px;
@@ -245,10 +220,7 @@
       margin-bottom: 20px;
     }
 
-
-    /* =========================
-       ARTICLE META
-    ========================= */
+    /* META */
 
     .article-meta {
       color: #64748b;
@@ -258,17 +230,14 @@
       margin-bottom: 25px;
     }
 
-
-    /* =========================
-       FEATURED IMAGE
-    ========================= */
+    /* FEATURED IMAGE */
 
     .featured-image {
       display: block;
 
       width: 100%;
 
-      max-width: 700px;
+      max-width: 650px;
 
       height: 220px;
 
@@ -282,7 +251,7 @@
     }
 
     .image-caption {
-      max-width: 700px;
+      max-width: 650px;
 
       margin: 0 auto 30px;
 
@@ -297,10 +266,7 @@
       line-height: 1.5;
     }
 
-
-    /* =========================
-       ARTICLE BODY
-    ========================= */
+    /* ARTICLE BODY */
 
     .article-body {
       background: white;
@@ -314,11 +280,6 @@
       box-shadow:
         0 8px 25px rgba(15,23,42,0.06);
     }
-
-
-    /* =========================
-       HEADINGS
-    ========================= */
 
     .article-body h2 {
       font-size: 27px;
@@ -340,26 +301,18 @@
       margin: 22px 0 7px;
     }
 
-
-    /* =========================
-       PARAGRAPHS
-    ========================= */
-
     .article-body p {
       margin-bottom: 16px;
 
       color: #374151;
     }
 
-
-    /* =========================
-       ARTICLE CONTENT IMAGES
-    ========================= */
+    /* ARTICLE IMAGES */
 
     .article-image-box {
       width: 100%;
 
-      max-width: 520px;
+      max-width: 500px;
 
       margin: 25px auto;
     }
@@ -369,7 +322,7 @@
 
       width: 100%;
 
-      height: 210px;
+      height: 200px;
 
       object-fit: cover;
 
@@ -395,10 +348,7 @@
       line-height: 1.5;
     }
 
-
-    /* =========================
-       QUOTE
-    ========================= */
+    /* QUOTE */
 
     .quote {
       margin: 25px 0;
@@ -418,10 +368,7 @@
       color: #1e3a8a;
     }
 
-
-    /* =========================
-       PUBLIC HEALTH NOTICE
-    ========================= */
+    /* NOTICE */
 
     .notice {
       margin-top: 30px;
@@ -439,10 +386,7 @@
       font-size: 14px;
     }
 
-
-    /* =========================
-       SOURCES
-    ========================= */
+    /* SOURCES */
 
     .source-box {
       margin-top: 30px;
@@ -465,9 +409,7 @@
 
       font-weight: bold;
     }
-        /* =========================
-       SHARE SECTION
-    ========================= */
+        /* SHARE SECTION */
 
     .share-box {
       margin-top: 35px;
@@ -553,9 +495,7 @@
     }
 
 
-    /* =========================
-       NEWSLETTER
-    ========================= */
+    /* NEWSLETTER */
 
     .newsletter {
       margin-top: 35px;
@@ -630,9 +570,7 @@
     }
 
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       margin-top: 50px;
@@ -653,9 +591,7 @@
     }
 
 
-    /* =========================
-       MOBILE DESIGN
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 700px) {
 
@@ -712,16 +648,12 @@
 
 <body>
 
-  <!-- =========================
-       TOP RAINBOW
-  ========================= -->
+  <!-- RAINBOW TOP -->
 
   <div class="rainbow"></div>
 
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+  <!-- HEADER -->
 
   <header>
 
@@ -751,9 +683,7 @@
   </header>
 
 
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
+  <!-- NAVIGATION -->
 
   <nav>
 
@@ -800,9 +730,7 @@
   </nav>
 
 
-  <!-- =========================
-       ARTICLE
-  ========================= -->
+  <!-- ARTICLE CONTAINER -->
 
   <main class="article-container">
 
@@ -835,18 +763,15 @@
     >
 
     <div class="image-caption">
-      Regular handwashing with soap and clean water is an important part of infection prevention.
+      Regular handwashing with soap and clean water is an important part
+      of infection prevention.
     </div>
 
 
     <!-- ARTICLE BODY -->
 
     <div class="article-body">
-            <!-- =========================
-           WHY INFECTION PREVENTION MATTERS
-      ========================= -->
-
-      <h2>
+            <h2>
         Why Infection Prevention Matters
       </h2>
 
@@ -865,10 +790,6 @@
       </p>
 
 
-      <!-- =========================
-           HOW CAN WE REDUCE INFECTIONS?
-      ========================= -->
-
       <h2>
         How Can We Reduce the Spread of Infections?
       </h2>
@@ -879,16 +800,14 @@
       </p>
 
 
-      <!-- =========================
-           HANDWASHING IMAGE
-      ========================= -->
+      <!-- STEP 1 IMAGE -->
 
       <div class="article-image-box">
 
         <img
           class="article-image"
-          src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80"
-          alt="Handwashing with soap and water"
+          src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1000&q=80"
+          alt="Person washing hands with soap and water"
           loading="lazy"
         >
 
@@ -899,10 +818,6 @@
 
       </div>
 
-
-      <!-- =========================
-           1. HANDWASHING
-      ========================= -->
 
       <h3>
         🧼 1. Wash Your Hands Regularly
@@ -915,9 +830,7 @@
       </p>
 
 
-      <!-- =========================
-           2. RESPIRATORY HYGIENE
-      ========================= -->
+      <!-- STEP 2 -->
 
       <h3>
         🤧 2. Practise Good Respiratory Hygiene
@@ -929,13 +842,13 @@
       </p>
 
 
-      <!-- RESPIRATORY HYGIENE IMAGE -->
+      <!-- STEP 2 IMAGE -->
 
       <div class="article-image-box">
 
         <img
           class="article-image"
-          src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
+          src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1000&q=80"
           alt="Person practising respiratory hygiene"
           loading="lazy"
         >
@@ -948,9 +861,7 @@
       </div>
 
 
-      <!-- =========================
-           3. AVOID CLOSE CONTACT
-      ========================= -->
+      <!-- STEP 3 -->
 
       <h3>
         👥 3. Avoid Close Contact When You Are Sick
@@ -964,9 +875,7 @@
       </p>
 
 
-      <!-- =========================
-           4. CLEAN SURFACES
-      ========================= -->
+      <!-- STEP 4 -->
 
       <h3>
         🧽 4. Keep Frequently Touched Surfaces Clean
@@ -979,13 +888,13 @@
       </p>
 
 
-      <!-- SURFACE CLEANING IMAGE -->
+      <!-- STEP 4 IMAGE -->
 
       <div class="article-image-box">
 
         <img
           class="article-image"
-          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80"
           alt="Cleaning and disinfecting a surface"
           loading="lazy"
         >
@@ -998,9 +907,7 @@
       </div>
 
 
-      <!-- =========================
-           5. PERSONAL ITEMS
-      ========================= -->
+      <!-- STEP 5 -->
 
       <h3>
         🥤 5. Avoid Sharing Personal Items
@@ -1013,9 +920,7 @@
       </p>
 
 
-      <!-- =========================
-           6. SCHOOLS AND WORKPLACES
-      ========================= -->
+      <!-- STEP 6 -->
 
       <h3>
         🏫 6. Make Schools and Workplaces Part of the Solution
@@ -1032,11 +937,11 @@
       <div class="article-image-box">
 
         <img
-  class="article-image"
-  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80"
-  alt="Person practising respiratory hygiene"
-  loading="lazy"
->
+          class="article-image"
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
+          alt="People working together in a community"
+          loading="lazy"
+        >
 
         <div class="article-image-caption">
           Schools, workplaces and communities can work together to
@@ -1046,18 +951,12 @@
       </div>
 
 
-      <!-- =========================
-           QUOTE
-      ========================= -->
+      <!-- QUOTE -->
 
       <div class="quote">
         Clean hands save lives.
       </div>
 
-
-      <!-- =========================
-           RESPONSIBILITY
-      ========================= -->
 
       <h2>
         Infection Prevention Is Everyone's Responsibility
@@ -1076,10 +975,6 @@
       </p>
 
 
-      <!-- =========================
-           WHEN YOU ARE UNWELL
-      ========================= -->
-
       <h2>
         When You Are Unwell
       </h2>
@@ -1090,9 +985,7 @@
       </p>
 
 
-      <!-- =========================
-           PUBLIC HEALTH NOTICE
-      ========================= -->
+      <!-- PUBLIC HEALTH NOTICE -->
 
       <div class="notice">
 
@@ -1105,10 +998,8 @@
         Disease Control and Prevention (NCDC) and qualified healthcare
         professionals.
 
-      </div>
-            <!-- =========================
-           CONCLUSION
-      ========================= -->
+        </div>
+              <!-- CONCLUSION -->
 
       <h2>
         Conclusion
@@ -1134,9 +1025,7 @@
       </p>
 
 
-      <!-- =========================
-           SOURCES
-      ========================= -->
+      <!-- SOURCES -->
 
       <div class="source-box">
 
@@ -1162,304 +1051,103 @@
 
       </div>
 
-    </div>
 
+      <!-- SHARE ARTICLE -->
 
-    <!-- =========================
-         SHARE ARTICLE
-    ========================= -->
+      <div class="share-box">
 
-    <div class="share-box">
-
-      <h3>
-        Share This Article
-      </h3>
-
-      <p>
-        Help someone else discover this useful information.
-      </p>
-
-      <div class="share-buttons">
-
-        <a
-          href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-          target="_blank"
-          rel="noopener"
-          class="share-whatsapp"
-        >
-          WhatsApp
-        </a>
-
-        <a
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-          target="_blank"
-          rel="noopener"
-          class="share-facebook"
-        >
-          Facebook
-        </a>
-
-        <a
-          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
-          target="_blank"
-          rel="noopener"
-          class="share-x"
-        >
-          X
-        </a>
-
-        <button
-          type="button"
-          onclick="copyArticleLink()"
-          class="share-copy"
-        >
-          Copy Link
-        </button>
-
-      </div>
-
-    </div>
-
-
-    <!-- =========================
-         NEWSLETTER
-    ========================= -->
-
-    <section class="newsletter">
-
-      <h2>
-        Stay Connected
-      </h2>
-
-      <p>
-        More stories, ideas and useful information are coming to
-        The Daily Lens.
-      </p>
-
-      <form
-        action="https://formspree.io/f/mrpznjgw"
-        method="POST"
-      >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email address"
-          aria-label="Email address"
-          required
-        >
-
-        <button type="submit">
-          Subscribe
-        </button>
-
-      </form>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
-
-    <p>
-      © 2026 The Daily Lens. All rights reserved.
-    </p>
-
-  </footer>
-
-
-  <!-- =========================
-       COPY LINK SCRIPT
-  ========================= -->
-
-  <script>
-
-    function copyArticleLink() {
-
-      const articleLink =
-        "https://jimohquadrikayode.github.io/the-daily-lens/health-infection-prevention.html";
-
-      navigator.clipboard.writeText(articleLink)
-        .then(function() {
-
-          alert("Article link copied successfully!");
-
-        })
-        .catch(function() {
-
-          alert("Unable to copy the link. Please copy it manually.");
-
-        });
-
-    }
-
-  </script>
-
-</body>
-
-          </html>
-            <!-- =========================
-           CONCLUSION
-      ========================= -->
-
-      <h2>
-        Conclusion
-      </h2>
-
-      <p>
-        Preventing infectious diseases does not belong to healthcare
-        workers alone. It begins with each of us.
-      </p>
-
-      <p>
-        By washing our hands regularly, practising good hygiene,
-        keeping shared environments clean, avoiding unnecessary
-        exposure when we are sick and following advice from health
-        authorities, we can help protect ourselves and the people
-        around us.
-      </p>
-
-      <p>
-        <strong>
-          Prevention is everyone's responsibility.
-        </strong>
-      </p>
-
-
-      <!-- =========================
-           SOURCES
-      ========================= -->
-
-      <div class="source-box">
-
-        <strong>
-          Sources and further information
-        </strong>
+        <h3>
+          Share This Article
+        </h3>
 
         <p>
-          Nigeria Centre for Disease Control and Prevention (NCDC):
+          Help someone else discover this useful information.
+        </p>
+
+        <div class="share-buttons">
+
           <a
-            href="https://www.ncdc.gov.ng/"
+            href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
             target="_blank"
             rel="noopener"
+            class="share-whatsapp"
           >
-            Official website
+            WhatsApp
           </a>
-        </p>
+
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+            target="_blank"
+            rel="noopener"
+            class="share-facebook"
+          >
+            Facebook
+          </a>
+
+          <a
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
+            target="_blank"
+            rel="noopener"
+            class="share-x"
+          >
+            X
+          </a>
+
+          <button
+            type="button"
+            onclick="copyArticleLink()"
+            class="share-copy"
+          >
+            Copy Link
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- NEWSLETTER -->
+
+      <section class="newsletter">
+
+        <h2>
+          Stay Connected
+        </h2>
 
         <p>
-          This article is for general public-health education and is
-          not a substitute for professional medical advice.
+          More stories, ideas and useful information are coming to
+          The Daily Lens.
         </p>
 
-      </div>
+        <form
+          action="https://formspree.io/f/mrpznjgw"
+          method="POST"
+        >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            aria-label="Email address"
+            required
+          >
+
+          <button type="submit">
+            Subscribe
+          </button>
+
+        </form>
+
+      </section>
 
     </div>
+    <!-- END ARTICLE BODY -->
 
-
-    <!-- =========================
-         SHARE ARTICLE
-    ========================= -->
-
-    <div class="share-box">
-
-      <h3>
-        Share This Article
-      </h3>
-
-      <p>
-        Help someone else discover this useful information.
-      </p>
-
-      <div class="share-buttons">
-
-        <a
-          href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-          target="_blank"
-          rel="noopener"
-          class="share-whatsapp"
-        >
-          WhatsApp
-        </a>
-
-        <a
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-          target="_blank"
-          rel="noopener"
-          class="share-facebook"
-        >
-          Facebook
-        </a>
-
-        <a
-          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
-          target="_blank"
-          rel="noopener"
-          class="share-x"
-        >
-          X
-        </a>
-
-        <button
-          type="button"
-          onclick="copyArticleLink()"
-          class="share-copy"
-        >
-          Copy Link
-        </button>
-
-      </div>
-
-    </div>
-
-
-    <!-- =========================
-         NEWSLETTER
-    ========================= -->
-
-    <section class="newsletter">
-
-      <h2>
-        Stay Connected
-      </h2>
-
-      <p>
-        More stories, ideas and useful information are coming to
-        The Daily Lens.
-      </p>
-
-      <form
-        action="https://formspree.io/f/mrpznjgw"
-        method="POST"
-      >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email address"
-          aria-label="Email address"
-          required
-        >
-
-        <button type="submit">
-          Subscribe
-        </button>
-
-      </form>
-
-    </section>
 
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- FOOTER -->
 
   <footer>
 
@@ -1470,9 +1158,7 @@
   </footer>
 
 
-  <!-- =========================
-       COPY LINK SCRIPT
-  ========================= -->
+  <!-- COPY LINK SCRIPT -->
 
   <script>
 
@@ -1496,6 +1182,7 @@
     }
 
   </script>
+
 
 </body>
 
