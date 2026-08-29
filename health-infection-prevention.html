@@ -14,15 +14,19 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'G-S268J48M4T');
   </script>
 
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>Infection Prevention Starts With You | The Daily Lens</title>
+  <title>
+    Infection Prevention Starts With You | The Daily Lens
+  </title>
 
   <meta
     name="description"
@@ -37,6 +41,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f9fc;
@@ -44,8 +52,11 @@
       line-height: 1.7;
     }
 
+    /* RAINBOW TOP LINE */
+
     .rainbow {
       height: 7px;
+
       background: linear-gradient(
         90deg,
         #ef4444,
@@ -59,6 +70,8 @@
       );
     }
 
+    /* HEADER */
+
     header {
       background: white;
       border-bottom: 1px solid #e5e7eb;
@@ -68,156 +81,17 @@
       max-width: 1100px;
       margin: auto;
       padding: 22px 20px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       gap: 20px;
     }
 
     .brand {
-      font-size: 30px;
-      font-weight: 900;
-      background: linear-gradient(
-        90deg,
-        #ef4444,
-        #7c3aed,
-        #2563eb
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .tagline {
-      color: #64748b;
-      font-size: 13px;
-    }
-
-    .back-home {
-      text-decoration: none;
-      background: #2563eb;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .back-home:hover {
-      background: #1d4ed8;
-    }
-
-    nav {
-      background: linear-gradient(
-        90deg,
-        #7c3aed,
-        #2563eb,
-        #0891b2
-      );
-      overflow-x: auto;
-    }
-
-    nav ul {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 15px;
-      list-style: none;
-      display: flex;
-      white-space: nowrap;
-    }
-
-    nav a {
-      display: block;
-      padding: 14px;
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background: rgba(255,255,255,0.18);
-    }
-
-    .article-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .category {
-      display: inline-block;
-      background: #059669;
-      color: white;
-      padding: 6px 13px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 900;
-      margin-bottom: 15px;
-    }
-
-    .article-title {
-      font-size: 44px;
-      line-height: 1.15;
-      color: #111827;
-      margin-bottom: 15px;
-    }
-
-    .article-intro {
-      font-size: 19px;
-      color: #64748b;
-      margin-bottom: 20px;
-    }
-
-    .article-meta {
-      color: #64748b;
-      font-size: 13px;
-      margin-bottom: 25px;
-    }
-
-    .featured-image {
-      
-      /* ARTICLE IMAGES */
-
-.article-image-box {
-  margin: 25px auto;
-  max-width: 350px;
-}
-
-.article-image {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
-}
-
-.article-image-caption {
-  margin-top: 8px;
-  text-align: center;
-  color: #64748b;
-  font-size: 12px;
-  font-style: italic;
-  line-height: 1.5;
-}
-      width: 100%;
-height: 150px;
-border-radius: 16px;
-object-fit: cover;
-margin-bottom: 25px;
-display: block;
-background: #e5e7eb;
-
-    .article-body {
-      background: white;
-      padding: 35px;
-      border-radius: 20px;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 8px 25px rgba(15,23,42,0.06);
-    }
-
-    .article-body h2 {
-      font-size: 27px;
+      font-size: 30px
+            font-size: 27px;
       color: #111827;
       margin: 30px 0 12px;
     }
@@ -237,43 +111,95 @@ background: #e5e7eb;
       color: #374151;
     }
 
-    .article-body ul {
-      margin: 10px 0 20px 22px;
+    /* ARTICLE CONTENT IMAGES */
+
+    .article-image-box {
+      width: 100%;
+      max-width: 700px;
+      margin: 30px auto;
     }
 
-    .article-body li {
-      margin-bottom: 10px;
-      color: #374151;
+    .article-image {
+      width: 100%;
+      height: 260px;
+
+      object-fit: cover;
+
+      display: block;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 6px 18px rgba(15, 23, 42, 0.10);
     }
+
+    .article-image-caption {
+      margin-top: 8px;
+
+      text-align: center;
+
+      color: #64748b;
+
+      font-size: 12px;
+
+      font-style: italic;
+
+      line-height: 1.5;
+    }
+
+    /* QUOTE */
 
     .quote {
       margin: 25px 0;
+
       padding: 20px;
+
       border-left: 5px solid #2563eb;
+
       background: #eff6ff;
+
       border-radius: 10px;
+
       font-size: 20px;
+
       font-weight: bold;
+
       color: #1e3a8a;
     }
 
+    /* PUBLIC HEALTH NOTICE */
+
     .notice {
       margin-top: 30px;
+
       padding: 20px;
+
       background: #fffbeb;
+
       border: 1px solid #fde68a;
+
       border-radius: 12px;
+
       color: #713f12;
+
       font-size: 14px;
     }
 
+    /* SOURCES */
+
     .source-box {
       margin-top: 30px;
+
       padding: 20px;
+
       background: #f8fafc;
+
       border: 1px solid #e2e8f0;
+
       border-radius: 12px;
+
       font-size: 13px;
+
       color: #475569;
     }
 
@@ -282,605 +208,238 @@ background: #e5e7eb;
       font-weight: bold;
     }
 
-    .newsletter {
+    /* SHARE SECTION */
+
+    .share-box {
       margin-top: 35px;
-      padding: 35px;
+      margin-bottom: 35px;
 
-        /* ARTICLE IMAGE SIZE FIX */
+      padding: 28px;
 
-.featured-image {
-  width: 100%;
-  height: 300px !important;
-  border-radius: 16px;
-  object-fit: cover;
-  margin-bottom: 25px;
-  display: block;
-}
+      background: #f8fafc;
 
-.article-image {
-  width: 100%;
-  height: 300px !important;
-  object-fit: cover;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
-}
+      border: 1px solid #e2e8f0;
 
-/* MOBILE */
+      border-radius: 18px;
 
-@media (max-width: 600px) {
-
-  .featured-image {
-    height: 240px !important;
-  }
-
-  .article-image {
-    height: 240px !important;
-  }
-
-}
-
-    /* FINAL ARTICLE IMAGE SIZE CONTROL */
-
-.article-body .article-image-box {
-  width: 100%;
-  max-width: 700px;
-  margin: 25px auto;
-}
-
-.article-body .article-image-box img {
-  width: 100% !important;
-  height: 260px !important;
-  max-height: 260px !important;
-  object-fit: cover !important;
-  display: block;
-  border-radius: 14px;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-
-  .article-body .article-image-box {
-    max-width: 100%;
-  }
-
-  .article-body .article-image-box img {
-    height: 220px !important;
-    max-height: 220px !important;
-  }
-
-}
-      
-      <style>
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f7f9fc;
-    color: #172033;
-    line-height: 1.7;
-  }
-
-  /* RAINBOW TOP LINE */
-
-  .rainbow {
-    height: 7px;
-    background: linear-gradient(
-      90deg,
-      #ef4444,
-      #f97316,
-      #eab308,
-      #22c55e,
-      #06b6d4,
-      #3b82f6,
-      #8b5cf6,
-      #ec4899
-    );
-  }
-
-  /* HEADER */
-
-  header {
-    background: white;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .header-inner {
-    max-width: 1100px;
-    margin: auto;
-    padding: 22px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .brand {
-    font-size: 30px;
-    font-weight: 900;
-    background: linear-gradient(
-      90deg,
-      #ef4444,
-      #7c3aed,
-      #2563eb
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .tagline {
-    color: #64748b;
-    font-size: 13px;
-  }
-
-  .back-home {
-    text-decoration: none;
-    background: #2563eb;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-
-  .back-home:hover {
-    background: #1d4ed8;
-  }
-
-  /* NAVIGATION */
-
-  nav {
-    background: linear-gradient(
-      90deg,
-      #7c3aed,
-      #2563eb,
-      #0891b2
-    );
-    overflow-x: auto;
-  }
-
-  nav ul {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 15px;
-    list-style: none;
-    display: flex;
-    white-space: nowrap;
-  }
-
-  nav a {
-    display: block;
-    padding: 14px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    background: rgba(255,255,255,0.18);
-  }
-
-  /* ARTICLE */
-
-  .article-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-
-  .category {
-    display: inline-block;
-    background: #059669;
-    color: white;
-    padding: 6px 13px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 900;
-    margin-bottom: 15px;
-  }
-
-  .article-title {
-    font-size: 44px;
-    line-height: 1.15;
-    color: #111827;
-    margin-bottom: 15px;
-  }
-
-  .article-intro {
-    font-size: 19px;
-    color: #64748b;
-    margin-bottom: 20px;
-  }
-
-  .article-meta {
-    color: #64748b;
-    font-size: 13px;
-    margin-bottom: 25px;
-  }
-
-  /* MAIN ARTICLE IMAGE */
-
-  .featured-image {
-  width: 100%;
-  height: 300px;
-  border-radius: 16px;
-  object-fit: cover;
-  margin-bottom: 25px;
-  display: block;
-  }
-
-  /* IMAGE CAPTION */
-
-  .image-caption {
-    color: #64748b;
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-style: italic;
-  }
-
-  /* ARTICLE BODY */
-
-  .article-body {
-    background: white;
-    padding: 35px;
-    border-radius: 20px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 25px rgba(15,23,42,0.06);
-  }
-
-  .article-body h2 {
-    font-size: 27px;
-    color: #111827;
-    margin: 30px 0 12px;
-  }
-
-  .article-body h2:first-child {
-    margin-top: 0;
-  }
-
-  .article-body h3 {
-    font-size: 20px;
-    color: #111827;
-    margin: 22px 0 7px;
-  }
-
-  .article-body p {
-    margin-bottom: 16px;
-    color: #374151;
-  }
-
-  .article-body ul {
-    margin: 10px 0 20px 22px;
-  }
-
-  .article-body li {
-    margin-bottom: 10px;
-    color: #374151;
-  }
-
-  /* ARTICLE CONTENT IMAGES */
-
-  .article-image-box {
-    margin: 30px 0;
-  }
-
-.article-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
-}
-
-  .article-image-caption {
-    margin-top: 8px;
-    text-align: center;
-    color: #64748b;
-    font-size: 12px;
-    font-style: italic;
-  }
-
-  /* QUOTE */
-
-  .quote {
-    margin: 25px 0;
-    padding: 20px;
-    border-left: 5px solid #2563eb;
-    background: #eff6ff;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #1e3a8a;
-  }
-
-  /* NOTICE */
-
-  .notice {
-    margin-top: 30px;
-    padding: 20px;
-    background: #fffbeb;
-    border: 1px solid #fde68a;
-    border-radius: 12px;
-    color: #713f12;
-    font-size: 14px;
-  }
-
-  /* SOURCES */
-
-  .source-box {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    font-size: 13px;
-    color: #475569;
-  }
-
-  .source-box a {
-    color: #2563eb;
-    font-weight: bold;
-  }
-
-  /* SHARE SECTION */
-
-  .share-box {
-    margin-top: 30px;
-    padding: 25px;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 15px;
-    text-align: center;
-  }
-
-  .share-box h3 {
-    margin-bottom: 12px;
-    color: #111827;
-  }
-
-  .share-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .share-button {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-  }
-
-  .whatsapp {
-    background: #16a34a;
-  }
-
-  .facebook {
-    background: #2563eb;
-  }
-
-  .twitter {
-    background: #111827;
-  }
-
-      /* SHARE ARTICLE */
-
-.share-box {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding: 28px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  text-align: center;
-}
-
-.share-box h3 {
-  font-size: 23px;
-  color: #111827;
-  margin-bottom: 6px;
-}
-
-.share-box p {
-  color: #64748b;
-  font-size: 14px;
-  margin-bottom: 18px;
-}
-
-.share-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 9px;
-}
-
-.share-buttons a,
-.share-buttons button {
-  display: inline-block;
-  padding: 11px 17px;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.share-whatsapp {
-  background: #16a34a;
-}
-
-.share-facebook {
-  background: #2563eb;
-}
-
-.share-x {
-  background: #111827;
-}
-
-.share-copy {
-  background: #7c3aed;
-}
-
-.share-buttons a:hover,
-.share-buttons button:hover {
-  opacity: 0.85;
-}
-
-@media (max-width: 700px) {
-
-  .share-buttons {
-    flex-direction: column;
-  }
-
-  .share-buttons a,
-  .share-buttons button {
-    width: 100%;
-  }
-
-}
-
-  /* NEWSLETTER */
-
-  .newsletter {
-    margin-top: 35px;
-    padding: 35px;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    background: linear-gradient(
-      110deg,
-      #0f766e,
-      #0891b2,
-      #2563eb,
-      #7c3aed
-    );
-  }
-
-  .newsletter h2 {
-    margin-bottom: 8px;
-  }
-
-  .newsletter p {
-    color: #e0f2fe;
-    margin-bottom: 18px;
-  }
-
-  .newsletter form {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-  }
-
-  .newsletter input {
-    width: 60%;
-    max-width: 430px;
-    padding: 13px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-  }
-
-  .newsletter button {
-    padding: 13px 20px;
-    border: none;
-    border-radius: 8px;
-    background: #f97316;
-    color: white;
-    font-weight: 900;
-    cursor: pointer;
-  }
-
-  .newsletter button:hover {
-    background: #ea580c;
-  }
-
-  /* FOOTER */
-
-  footer {
-    margin-top: 50px;
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
-  footer p {
-    color: #9ca3af;
-    font-size: 13px;
-  }
-
-  /* MOBILE */
-
-  @media (max-width: 700px) {
-
-    .header-inner {
-      flex-direction: column;
-      align-items: flex-start;
+      text-align: center;
     }
 
-    .article-title {
-      font-size: 32px;
+    .share-box h3 {
+      font-size: 23px;
+
+      color: #111827;
+
+      margin-bottom: 6px;
     }
 
-    .featured-image {
-      height: 250px;
-    }
+    .share-box p {
+      color: #64748b;
 
-    .article-image {
-  max-height: 280px;
-    }
+      font-size: 14px;
 
-    .article-body {
-      padding: 23px;
-    }
-
-    .article-image {
-      max-height: 300px;
+      margin-bottom: 18px;
     }
 
     .share-buttons {
-      flex-direction: column;
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 9px;
     }
 
-    .share-button {
-      width: 100%;
+    .share-buttons a,
+    .share-buttons button {
+      display: inline-block;
+
+      padding: 11px 17px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: 900;
+
+      font-size: 13px;
+
+      cursor: pointer;
+    }
+
+    .share-whatsapp {
+      background: #16a34a;
+    }
+
+    .share-facebook {
+      background: #2563eb;
+    }
+
+    .share-x {
+      background: #111827;
+    }
+
+    .share-copy {
+      background: #7c3aed;
+    }
+
+    .share-buttons a:hover,
+    .share-buttons button:hover {
+      opacity: 0.85;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+      margin-top: 35px;
+
+      padding: 35px;
+
+      border-radius: 20px;
+
+      color: white;
+
+      text-align: center;
+
+      background: linear-gradient(
+        110deg,
+        #0f766e,
+        #0891b2,
+        #2563eb,
+        #7c3aed
+      );
+    }
+
+    .newsletter h2 {
+      margin-bottom: 8px;
+    }
+
+    .newsletter p {
+      color: #e0f2fe;
+
+      margin-bottom: 18px;
     }
 
     .newsletter form {
-      flex-direction: column;
+      display: flex;
+
+      justify-content: center;
+
+      gap: 7px;
     }
 
     .newsletter input {
-      width: 100%;
-      max-width: none;
+      width: 60%;
+
+      max-width: 430px;
+
+      padding: 13px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      outline: none;
     }
 
     .newsletter button {
-      width: 100%;
+      padding: 13px 20px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: #f97316;
+
+      color: white;
+
+      font-weight: 900;
+
+      cursor: pointer;
     }
 
-  }
+    .newsletter button:hover {
+      background: #ea580c;
+    }
 
-</style>
-  
+    /* FOOTER */
+
+    footer {
+      margin-top: 50px;
+
+      background: #111827;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 30px 20px;
+    }
+
+    footer p {
+      color: #9ca3af;
+
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .header-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+      .article-title {
+        font-size: 32px;
+      }
+
+      .featured-image {
+        height: 240px;
+      }
+
+      .article-body {
+        padding: 23px;
+      }
+
+      .article-image {
+        height: 220px;
+      }
+
+      .share-buttons {
+        flex-direction: column;
+      }
+
+      .share-buttons a,
+      .share-buttons button {
+        width: 100%;
+      }
+
+      .newsletter form {
+        flex-direction: column;
+      }
+
+      .newsletter input {
+        width: 100%;
+
+        max-width: none;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
@@ -892,11 +451,21 @@ background: #e5e7eb;
     <div class="header-inner">
 
       <div>
-        <div class="brand">The Daily Lens</div>
-        <div class="tagline">News, ideas and stories that matter</div>
+
+        <div class="brand">
+          The Daily Lens
+        </div>
+
+        <div class="tagline">
+          News, ideas and stories that matter
+        </div>
+
       </div>
 
-      <a href="index.html" class="back-home">
+      <a
+        href="index.html"
+        class="back-home"
+      >
         ← Back to Home
       </a>
 
@@ -908,15 +477,41 @@ background: #e5e7eb;
 
     <ul>
 
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="sports.html">Sports</a></li>
-      <li><a href="religion.html">Religion</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="technology.html">Technology</a></li>
-      <li><a href="business.html">Business</a></li>
-      <li><a href="lifestyle.html">Lifestyle</a></li>
-      <li><a href="opinion.html">Opinion</a></li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="news.html">News</a>
+      </li>
+
+      <li>
+        <a href="sports.html">Sports</a>
+      </li>
+
+      <li>
+        <a href="religion.html">Religion</a>
+      </li>
+
+      <li>
+        <a href="education.html">Education</a>
+      </li>
+
+      <li>
+        <a href="technology.html">Technology</a>
+      </li>
+
+      <li>
+        <a href="business.html">Business</a>
+      </li>
+
+      <li>
+        <a href="lifestyle.html">Lifestyle</a>
+      </li>
+
+      <li>
+        <a href="opinion.html">Opinion</a>
+      </li>
 
     </ul>
 
@@ -929,332 +524,389 @@ background: #e5e7eb;
     </span>
 
     <h1 class="article-title">
-      Infection Prevention Starts With You: Protect Your Home, School, Workplace and Community
+      Infection Prevention Starts With You:
+      Protect Your Home, School, Workplace and Community
     </h1>
 
     <p class="article-intro">
-      Simple infection prevention and control practices can help protect individuals, families and communities from infectious diseases.
+      Simple infection prevention and control practices can help protect
+      individuals, families and communities from infectious diseases.
     </p>
 
     <div class="article-meta">
-      Published by The Daily Lens • Health & Community
+      Published by The Daily Lens • Health &amp; Community
     </div>
 
-    <!-- FEATURED IMAGE WILL GO HERE -->
-
-<img
-  class="featured-image"
-  src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
-  alt="Person washing hands with soap for infection prevention"
->
-
-      <h2>
-        Why Infection Prevention Matters
-      </h2>
-
-      <p>
-        Infectious diseases can spread quickly when people live, study, work or gather closely together. While healthcare workers and public-health authorities play an important role in preventing and controlling outbreaks, individuals and communities also have an important part to play.
-      </p>
-
-      <p>
-        Good Infection Prevention and Control (IPC) practices can help reduce the spread of infections and protect families, schools, workplaces and communities.
-      </p>
-
-      <h2>
-        How Can We Reduce the Spread of Infections?
-      </h2>
-
-      <p>
-        Everyone has a role to play in breaking the chain of transmission. Simple everyday habits can make a significant difference.
-      </p>
-      <div class="article-image-box">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80"
-    alt="Handwashing with soap and water"
-    loading="lazy"
-  >
-
-  <div class="article-image-caption">
-    Regular handwashing with soap and clean water is one of the simplest ways to reduce the spread of infection.
-  </div>
-
-      </div>
-
-      <h3>🧼 1. Wash Your Hands Regularly</h3>
-
-      <p>
-        Wash your hands thoroughly with soap and clean running water, especially before eating or preparing food, after using the toilet and after contact with potentially contaminated materials.
-      </p>
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
-    alt="Person practising respiratory hygiene"
-    loading="lazy"
-  >
-
-  <div class="article-image-caption">
-    Cover your mouth and nose when coughing or sneezing to help protect people around you.
-  </div>
-
-      </div>
-
-      <h3>🤧 2. Practise Good Respiratory Hygiene</h3>
-
-      <p>
-        Cover your mouth and nose when coughing or sneezing. Dispose of used tissues properly and clean your hands afterwards.
-      </p>
-
-      <h3>👥 3. Avoid Close Contact When You Are Sick</h3>
-<h3>🧼 1. Wash Your Hands Regularly</h3>
-
-<p>
-  Wash your hands thoroughly with soap and clean running water, especially before eating or preparing food, after using the toilet and after contact with potentially contaminated materials.
-</p>
-
-<h3>🤧 2. Practise Good Respiratory Hygiene</h3>
-
-<p>
-  Cover your mouth and nose when coughing or sneezing. Dispose of used tissues properly and clean your hands afterwards.
-</p>
-
-<div class="article-image-box">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
-    alt="Person practising respiratory hygiene"
-    loading="lazy"
-  >
-
-  <div class="article-image-caption">
-    Cover your mouth and nose when coughing or sneezing to help protect people around you.
-  </div>
-
-</div>
-
-<h3>👥 3. Avoid Close Contact When You Are Sick</h3>
-
-<p>
-  If you develop symptoms of an infectious illness, avoid unnecessarily exposing other people and seek appropriate medical advice, particularly if symptoms are severe or getting worse.
-</p>
-
-<h3>🧽 4. Keep Frequently Touched Surfaces Clean</h3>
-
-<p>
-  Regularly clean and disinfect frequently touched surfaces such as door handles, tables, phones, keyboards and other shared items, especially in homes, schools and workplaces.
-</p>
-
-<div class="article-image-box">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
-    alt="Cleaning and disinfecting a surface"
-    loading="lazy"
-  >
-
-</div>
-
-<h3>🥤 5. Avoid Sharing Personal Items</h3>
-
-<p>
-  Where appropriate, avoid sharing personal-use items that may come into contact with bodily fluids, such as towels and similar items.
-</p>
-
-<h3>🏫 6. Make Schools and Workplaces Part of the Solution</h3>
-
-<p>
-  Schools, offices and other shared environments should encourage good hand hygiene, cleanliness and early reporting of illness.
-</p>
-
-<div class="article-image-box">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
-    alt="People working together in a community"
-    loading="lazy"
-  >
-
-  <div class="article-image-caption">
-    Schools, workplaces and communities can work together to promote healthier environments.
-  </div>
-
-</div>
-
-<div class="quote">
-  Clean hands save lives.
-</div>
-
-<h2>
-  Infection Prevention Is Everyone's Responsibility
-</h2>
-
-<p>
-  Healthcare workers cannot prevent the spread of infectious diseases alone. Families, teachers, students, workers, religious communities, business owners and community leaders all have a role to play.
-</p>
-
-<p>
-  Making good hygiene a daily habit can help create healthier and safer communities.
-</p>
-
-<h2>
-  When You Are Unwell
-</h2>
-
-<p>
-  Do not ignore serious or persistent symptoms. Seek appropriate medical attention rather than relying on self-medication.
-</p>
-
-<div class="notice">
-  <strong>Public health reminder:</strong>
-  For current disease alerts and official public-health guidance in Nigeria, follow information from the Nigeria Centre for Disease Control and Prevention (NCDC) and qualified healthcare professionals.
-</div>
-
-<h2>
-        Conclusion
-      </h2>
-
-      <p>
-        Preventing infectious diseases does not belong to healthcare workers alone. It begins with each of us.
-      </p>
-
-      <p>
-        By washing our hands regularly, practising good hygiene, keeping shared environments clean, avoiding unnecessary exposure when we are sick and following advice from health authorities, we can help protect ourselves and the people around us.
-      </p>
-
-      <p>
-        <strong>Prevention is everyone's responsibility.</strong>
-      </p>
-
-      <div class="source-box">
-
-        <strong>Sources and further information</strong>
-
-        <p>
-          Nigeria Centre for Disease Control and Prevention (NCDC):
-          <a href="https://www.ncdc.gov.ng/" target="_blank" rel="noopener">
-            Official website
-          </a>
-        </p>
-
-        <p>
-          This article is for general public-health education and is not a substitute for professional medical advice.
-        </p>
-
-      </div>
-
-    </article>
-    <div class="share-box">
-
-  <h3>
-    Share This Article
-  </h3>
-
-  <p>
-    Help someone else discover this useful information.
-  </p>
-
-  <div class="share-buttons">
-
-    <a
-      href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-      target="_blank"
-      rel="noopener"
-      class="share-whatsapp"
+    <img
+      class="featured-image"
+      src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
+      alt="Person washing hands with soap for infection prevention"
+      loading="lazy"
     >
-      WhatsApp
-    </a>
 
-    <a
-      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-      target="_blank"
-      rel="noopener"
-      class="share-facebook"
-    >
-      Facebook
-    </a>
+    <div class="image-caption">
+      Regular handwashing with soap and clean water is an important part of infection prevention.
+    </div>
 
-    <a
-      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
-      target="_blank"
-      rel="noopener"
-      class="share-x"
-    >
-      X
-    </a>
-
-    <button
-      type="button"
-      onclick="copyArticleLink()"
-      class="share-copy"
-    >
-      Copy Link
-    </button>
-
-  </div>
-
-</div>
-
-<script>
-function copyArticleLink() {
-
-  const articleLink =
-    "https://jimohquadrikayode.github.io/the-daily-lens/health-infection-prevention.html";
-
-  navigator.clipboard.writeText(articleLink).then(function() {
-
-    alert("Article link copied successfully!");
-
-  });
-
-}
-</script>
-
-    <section class="newsletter">
-
-      <h2>
-        Stay Connected
-      </h2>
-
-      <p>
-        More stories, ideas and useful information are coming to The Daily Lens.
-      </p>
-
-      <form
-        action="https://formspree.io/f/mrpznjgw"
-        method="POST"
-      >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email address"
-          aria-label="Email address"
-          required
-        >
-
-        <button type="submit">
-          Subscribe
-        </button>
-
-      </form>
-
-    </section>
-
-  </main>
-
-  <footer>
+    <div class="article-body">
+          <h2>
+      Why Infection Prevention Matters
+    </h2>
 
     <p>
-      © 2026 The Daily Lens. All rights reserved.
+      Infectious diseases can spread quickly when people live, study, work or
+      gather closely together. While healthcare workers and public-health
+      authorities play an important role in preventing and controlling
+      outbreaks, individuals and communities also have an important part to play.
     </p>
 
-  </footer>
+    <p>
+      Good Infection Prevention and Control (IPC) practices can help reduce the
+      spread of infections and protect families, schools, workplaces and communities.
+    </p>
+
+    <h2>
+      How Can We Reduce the Spread of Infections?
+    </h2>
+
+    <p>
+      Everyone has a role to play in breaking the chain of transmission.
+      Simple everyday habits can make a significant difference.
+    </p>
+
+    <!-- 1. HANDWASHING -->
+
+    <div class="article-image-box">
+
+      <img
+        class="article-image"
+        src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80"
+        alt="Handwashing with soap and water"
+        loading="lazy"
+      >
+
+      <div class="article-image-caption">
+        Regular handwashing with soap and clean water is one of the simplest
+        ways to reduce the spread of infection.
+      </div>
+
+    </div>
+
+    <h3>
+      🧼 1. Wash Your Hands Regularly
+    </h3>
+
+    <p>
+      Wash your hands thoroughly with soap and clean running water, especially
+      before eating or preparing food, after using the toilet and after contact
+      with potentially contaminated materials.
+    </p>
+
+    <!-- 2. RESPIRATORY HYGIENE -->
+
+    <h3>
+      🤧 2. Practise Good Respiratory Hygiene
+    </h3>
+
+    <p>
+      Cover your mouth and nose when coughing or sneezing. Dispose of used
+      tissues properly and clean your hands afterwards.
+    </p>
+
+    <div class="article-image-box">
+
+      <img
+        class="article-image"
+        src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
+        alt="Person practising respiratory hygiene"
+        loading="lazy"
+      >
+
+      <div class="article-image-caption">
+        Cover your mouth and nose when coughing or sneezing to help protect
+        people around you.
+      </div>
+
+    </div>
+
+    <!-- 3. AVOID CLOSE CONTACT -->
+
+    <h3>
+      👥 3. Avoid Close Contact When You Are Sick
+    </h3>
+
+    <p>
+      If you develop symptoms of an infectious illness, avoid unnecessarily
+      exposing other people and seek appropriate medical advice, particularly
+      if symptoms are severe or getting worse.
+    </p>
+
+    <!-- 4. CLEAN SURFACES -->
+
+    <h3>
+      🧽 4. Keep Frequently Touched Surfaces Clean
+    </h3>
+
+    <p>
+      Regularly clean and disinfect frequently touched surfaces such as door
+      handles, tables, phones, keyboards and other shared items, especially in
+      homes, schools and workplaces.
+    </p>
+
+    <div class="article-image-box">
+
+      <img
+        class="article-image"
+        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+        alt="Cleaning and disinfecting a surface"
+        loading="lazy"
+      >
+
+      <div class="article-image-caption">
+        Regular cleaning of frequently touched surfaces can help maintain
+        healthier shared environments.
+      </div>
+
+    </div>
+
+    <!-- 5. PERSONAL ITEMS -->
+
+    <h3>
+      🥤 5. Avoid Sharing Personal Items
+    </h3>
+
+    <p>
+      Where appropriate, avoid sharing personal-use items that may come into
+      contact with bodily fluids, such as towels and similar items.
+    </p>
+
+    <!-- 6. SCHOOLS AND WORKPLACES -->
+
+    <h3>
+      🏫 6. Make Schools and Workplaces Part of the Solution
+    </h3>
+
+    <p>
+      Schools, offices and other shared environments should encourage good
+      hand hygiene, cleanliness and early reporting of illness.
+    </p>
+
+    <div class="article-image-box">
+
+      <img
+        class="article-image"
+        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+        alt="People working together in a community"
+        loading="lazy"
+      >
+
+      <div class="article-image-caption">
+        Schools, workplaces and communities can work together to promote
+        healthier environments.
+      </div>
+
+    </div>
+
+    <div class="quote">
+      Clean hands save lives.
+    </div>
+
+    <h2>
+      Infection Prevention Is Everyone's Responsibility
+    </h2>
+
+    <p>
+      Healthcare workers cannot prevent the spread of infectious diseases alone.
+      Families, teachers, students, workers, religious communities, business
+      owners and community leaders all have a role to play.
+    </p>
+
+    <p>
+      Making good hygiene a daily habit can help create healthier and safer
+      communities.
+    </p>
+        <h2>
+      When You Are Unwell
+    </h2>
+
+    <p>
+      Do not ignore serious or persistent symptoms. Seek appropriate medical
+      attention rather than relying on self-medication.
+    </p>
+
+    <div class="notice">
+
+      <strong>Public health reminder:</strong>
+
+      For current disease alerts and official public-health guidance in Nigeria,
+      follow information from the Nigeria Centre for Disease Control and
+      Prevention (NCDC) and qualified healthcare professionals.
+
+    </div>
+
+    <h2>
+      Conclusion
+    </h2>
+
+    <p>
+      Preventing infectious diseases does not belong to healthcare workers alone.
+      It begins with each of us.
+    </p>
+
+    <p>
+      By washing our hands regularly, practising good hygiene, keeping shared
+      environments clean, avoiding unnecessary exposure when we are sick and
+      following advice from health authorities, we can help protect ourselves
+      and the people around us.
+    </p>
+
+    <p>
+      <strong>
+        Prevention is everyone's responsibility.
+      </strong>
+    </p>
+
+    <div class="source-box">
+
+      <strong>
+        Sources and further information
+      </strong>
+
+      <p>
+        Nigeria Centre for Disease Control and Prevention (NCDC):
+        <a
+          href="https://www.ncdc.gov.ng/"
+          target="_blank"
+          rel="noopener"
+        >
+          Official website
+        </a>
+      </p>
+
+      <p>
+        This article is for general public-health education and is not a
+        substitute for professional medical advice.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- SHARE ARTICLE -->
+
+  <div class="share-box">
+
+    <h3>
+      Share This Article
+    </h3>
+
+    <p>
+      Help someone else discover this useful information.
+    </p>
+
+    <div class="share-buttons">
+
+      <a
+        href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+        target="_blank"
+        rel="noopener"
+        class="share-whatsapp"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+        target="_blank"
+        rel="noopener"
+        class="share-facebook"
+      >
+        Facebook
+      </a>
+
+      <a
+        href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
+        target="_blank"
+        rel="noopener"
+        class="share-x"
+      >
+        X
+      </a>
+
+      <button
+        type="button"
+        onclick="copyArticleLink()"
+        class="share-copy"
+      >
+        Copy Link
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- COPY LINK SCRIPT -->
+
+  <script>
+
+    function copyArticleLink() {
+
+      const articleLink =
+        "https://jimohquadrikayode.github.io/the-daily-lens/health-infection-prevention.html";
+
+      navigator.clipboard.writeText(articleLink).then(function() {
+
+        alert("Article link copied successfully!");
+
+      });
+
+    }
+
+  </script>
+
+  <!-- NEWSLETTER -->
+
+  <section class="newsletter">
+
+    <h2>
+      Stay Connected
+    </h2>
+
+    <p>
+      More stories, ideas and useful information are coming to The Daily Lens.
+    </p>
+
+    <form
+      action="https://formspree.io/f/mrpznjgw"
+      method="POST"
+    >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email address"
+        aria-label="Email address"
+        required
+      >
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>
+    © 2026 The Daily Lens. All rights reserved.
+  </p>
+
+</footer>
 
 </body>
 
-  </html>
+</html>
