@@ -319,6 +319,38 @@ background: #e5e7eb;
   }
 
 }
+
+    /* FINAL ARTICLE IMAGE SIZE CONTROL */
+
+.article-body .article-image-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 25px auto;
+}
+
+.article-body .article-image-box img {
+  width: 100% !important;
+  height: 260px !important;
+  max-height: 260px !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .article-body .article-image-box {
+    max-width: 100%;
+  }
+
+  .article-body .article-image-box img {
+    height: 220px !important;
+    max-height: 220px !important;
+  }
+
+}
+      
       <style>
 
   * {
