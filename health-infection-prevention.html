@@ -35,6 +35,10 @@
 
   <style>
 
+    /* =========================
+       BASIC RESET
+    ========================= */
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -52,7 +56,10 @@
       line-height: 1.7;
     }
 
-    /* RAINBOW TOP LINE */
+
+    /* =========================
+       RAINBOW TOP LINE
+    ========================= */
 
     .rainbow {
       height: 7px;
@@ -70,7 +77,10 @@
       );
     }
 
-    /* HEADER */
+
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
       background: white;
@@ -90,9 +100,231 @@
     }
 
     .brand {
-      font-size: 30px
-            font-size: 27px;
+      font-size: 30px;
+      font-weight: 900;
+
+      background: linear-gradient(
+        90deg,
+        #ef4444,
+        #7c3aed,
+        #2563eb
+      );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .back-home {
+      text-decoration: none;
+
+      background: #2563eb;
+      color: white;
+
+      padding: 10px 16px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .back-home:hover {
+      background: #1d4ed8;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #2563eb,
+        #0891b2
+      );
+
+      overflow-x: auto;
+    }
+
+    nav ul {
+      max-width: 1100px;
+      margin: auto;
+
+      padding: 0 15px;
+
+      list-style: none;
+
+      display: flex;
+
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: block;
+
+      padding: 14px;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+
+    /* =========================
+       ARTICLE CONTAINER
+    ========================= */
+
+    .article-container {
+      max-width: 900px;
+
+      margin: 40px auto;
+
+      padding: 0 20px;
+    }
+
+
+    /* =========================
+       CATEGORY
+    ========================= */
+
+    .category {
+      display: inline-block;
+
+      background: #059669;
+      color: white;
+
+      padding: 6px 13px;
+
+      border-radius: 20px;
+
+      font-size: 12px;
+      font-weight: 900;
+
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       ARTICLE TITLE
+    ========================= */
+
+    .article-title {
+      font-size: 44px;
+
+      line-height: 1.15;
+
       color: #111827;
+
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       ARTICLE INTRO
+    ========================= */
+
+    .article-intro {
+      font-size: 19px;
+
+      color: #64748b;
+
+      margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       ARTICLE META
+    ========================= */
+
+    .article-meta {
+      color: #64748b;
+
+      font-size: 13px;
+
+      margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       FEATURED IMAGE
+    ========================= */
+
+    .featured-image {
+      display: block;
+
+      width: 100%;
+
+      max-width: 700px;
+
+      height: 220px;
+
+      margin: 0 auto 10px;
+
+      object-fit: cover;
+
+      border-radius: 16px;
+
+      background: #e5e7eb;
+    }
+
+    .image-caption {
+      max-width: 700px;
+
+      margin: 0 auto 30px;
+
+      text-align: center;
+
+      color: #64748b;
+
+      font-size: 12px;
+
+      font-style: italic;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       ARTICLE BODY
+    ========================= */
+
+    .article-body {
+      background: white;
+
+      padding: 35px;
+
+      border-radius: 20px;
+
+      border: 1px solid #e5e7eb;
+
+      box-shadow:
+        0 8px 25px rgba(15,23,42,0.06);
+    }
+
+
+    /* =========================
+       HEADINGS
+    ========================= */
+
+    .article-body h2 {
+      font-size: 27px;
+
+      color: #111827;
+
       margin: 30px 0 12px;
     }
 
@@ -102,35 +334,51 @@
 
     .article-body h3 {
       font-size: 20px;
+
       color: #111827;
+
       margin: 22px 0 7px;
     }
 
+
+    /* =========================
+       PARAGRAPHS
+    ========================= */
+
     .article-body p {
       margin-bottom: 16px;
+
       color: #374151;
     }
 
-    /* ARTICLE CONTENT IMAGES */
+
+    /* =========================
+       ARTICLE CONTENT IMAGES
+    ========================= */
 
     .article-image-box {
       width: 100%;
-      max-width: 700px;
-      margin: 30px auto;
+
+      max-width: 520px;
+
+      margin: 25px auto;
     }
 
     .article-image {
+      display: block;
+
       width: 100%;
-      height: 260px;
+
+      height: 210px;
 
       object-fit: cover;
 
-      display: block;
-
       border-radius: 14px;
 
+      background: #e5e7eb;
+
       box-shadow:
-        0 6px 18px rgba(15, 23, 42, 0.10);
+        0 6px 18px rgba(15,23,42,0.10);
     }
 
     .article-image-caption {
@@ -147,7 +395,10 @@
       line-height: 1.5;
     }
 
-    /* QUOTE */
+
+    /* =========================
+       QUOTE
+    ========================= */
 
     .quote {
       margin: 25px 0;
@@ -167,7 +418,10 @@
       color: #1e3a8a;
     }
 
-    /* PUBLIC HEALTH NOTICE */
+
+    /* =========================
+       PUBLIC HEALTH NOTICE
+    ========================= */
 
     .notice {
       margin-top: 30px;
@@ -185,7 +439,10 @@
       font-size: 14px;
     }
 
-    /* SOURCES */
+
+    /* =========================
+       SOURCES
+    ========================= */
 
     .source-box {
       margin-top: 30px;
@@ -205,10 +462,12 @@
 
     .source-box a {
       color: #2563eb;
+
       font-weight: bold;
     }
-
-    /* SHARE SECTION */
+        /* =========================
+       SHARE SECTION
+    ========================= */
 
     .share-box {
       margin-top: 35px;
@@ -293,7 +552,10 @@
       opacity: 0.85;
     }
 
-    /* NEWSLETTER */
+
+    /* =========================
+       NEWSLETTER
+    ========================= */
 
     .newsletter {
       margin-top: 35px;
@@ -367,7 +629,10 @@
       background: #ea580c;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       margin-top: 50px;
@@ -387,7 +652,10 @@
       font-size: 13px;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE DESIGN
+    ========================= */
 
     @media (max-width: 700px) {
 
@@ -402,7 +670,7 @@
       }
 
       .featured-image {
-        height: 240px;
+        height: 190px;
       }
 
       .article-body {
@@ -410,7 +678,7 @@
       }
 
       .article-image {
-        height: 220px;
+        height: 180px;
       }
 
       .share-buttons {
@@ -444,7 +712,16 @@
 
 <body>
 
+  <!-- =========================
+       TOP RAINBOW
+  ========================= -->
+
   <div class="rainbow"></div>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
 
   <header>
 
@@ -472,6 +749,11 @@
     </div>
 
   </header>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <nav>
 
@@ -517,6 +799,11 @@
 
   </nav>
 
+
+  <!-- =========================
+       ARTICLE
+  ========================= -->
+
   <main class="article-container">
 
     <span class="category">
@@ -537,6 +824,9 @@
       Published by The Daily Lens • Health &amp; Community
     </div>
 
+
+    <!-- FEATURED IMAGE -->
+
     <img
       class="featured-image"
       src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
@@ -548,304 +838,444 @@
       Regular handwashing with soap and clean water is an important part of infection prevention.
     </div>
 
+
+    <!-- ARTICLE BODY -->
+
     <div class="article-body">
-          <h2>
-      Why Infection Prevention Matters
-    </h2>
+            <!-- =========================
+           WHY INFECTION PREVENTION MATTERS
+      ========================= -->
 
-    <p>
-      Infectious diseases can spread quickly when people live, study, work or
-      gather closely together. While healthcare workers and public-health
-      authorities play an important role in preventing and controlling
-      outbreaks, individuals and communities also have an important part to play.
-    </p>
-
-    <p>
-      Good Infection Prevention and Control (IPC) practices can help reduce the
-      spread of infections and protect families, schools, workplaces and communities.
-    </p>
-
-    <h2>
-      How Can We Reduce the Spread of Infections?
-    </h2>
-
-    <p>
-      Everyone has a role to play in breaking the chain of transmission.
-      Simple everyday habits can make a significant difference.
-    </p>
-
-    <!-- 1. HANDWASHING -->
-
-    <div class="article-image-box">
-
-      <img
-        class="article-image"
-        src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80"
-        alt="Handwashing with soap and water"
-        loading="lazy"
-      >
-
-      <div class="article-image-caption">
-        Regular handwashing with soap and clean water is one of the simplest
-        ways to reduce the spread of infection.
-      </div>
-
-    </div>
-
-    <h3>
-      🧼 1. Wash Your Hands Regularly
-    </h3>
-
-    <p>
-      Wash your hands thoroughly with soap and clean running water, especially
-      before eating or preparing food, after using the toilet and after contact
-      with potentially contaminated materials.
-    </p>
-
-    <!-- 2. RESPIRATORY HYGIENE -->
-
-    <h3>
-      🤧 2. Practise Good Respiratory Hygiene
-    </h3>
-
-    <p>
-      Cover your mouth and nose when coughing or sneezing. Dispose of used
-      tissues properly and clean your hands afterwards.
-    </p>
-
-    <div class="article-image-box">
-
-      <img
-        class="article-image"
-        src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
-        alt="Person practising respiratory hygiene"
-        loading="lazy"
-      >
-
-      <div class="article-image-caption">
-        Cover your mouth and nose when coughing or sneezing to help protect
-        people around you.
-      </div>
-
-    </div>
-
-    <!-- 3. AVOID CLOSE CONTACT -->
-
-    <h3>
-      👥 3. Avoid Close Contact When You Are Sick
-    </h3>
-
-    <p>
-      If you develop symptoms of an infectious illness, avoid unnecessarily
-      exposing other people and seek appropriate medical advice, particularly
-      if symptoms are severe or getting worse.
-    </p>
-
-    <!-- 4. CLEAN SURFACES -->
-
-    <h3>
-      🧽 4. Keep Frequently Touched Surfaces Clean
-    </h3>
-
-    <p>
-      Regularly clean and disinfect frequently touched surfaces such as door
-      handles, tables, phones, keyboards and other shared items, especially in
-      homes, schools and workplaces.
-    </p>
-
-    <div class="article-image-box">
-
-      <img
-        class="article-image"
-        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
-        alt="Cleaning and disinfecting a surface"
-        loading="lazy"
-      >
-
-      <div class="article-image-caption">
-        Regular cleaning of frequently touched surfaces can help maintain
-        healthier shared environments.
-      </div>
-
-    </div>
-
-    <!-- 5. PERSONAL ITEMS -->
-
-    <h3>
-      🥤 5. Avoid Sharing Personal Items
-    </h3>
-
-    <p>
-      Where appropriate, avoid sharing personal-use items that may come into
-      contact with bodily fluids, such as towels and similar items.
-    </p>
-
-    <!-- 6. SCHOOLS AND WORKPLACES -->
-
-    <h3>
-      🏫 6. Make Schools and Workplaces Part of the Solution
-    </h3>
-
-    <p>
-      Schools, offices and other shared environments should encourage good
-      hand hygiene, cleanliness and early reporting of illness.
-    </p>
-
-    <div class="article-image-box">
-
-      <img
-        class="article-image"
-        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
-        alt="People working together in a community"
-        loading="lazy"
-      >
-
-      <div class="article-image-caption">
-        Schools, workplaces and communities can work together to promote
-        healthier environments.
-      </div>
-
-    </div>
-
-    <div class="quote">
-      Clean hands save lives.
-    </div>
-
-    <h2>
-      Infection Prevention Is Everyone's Responsibility
-    </h2>
-
-    <p>
-      Healthcare workers cannot prevent the spread of infectious diseases alone.
-      Families, teachers, students, workers, religious communities, business
-      owners and community leaders all have a role to play.
-    </p>
-
-    <p>
-      Making good hygiene a daily habit can help create healthier and safer
-      communities.
-    </p>
-        <h2>
-      When You Are Unwell
-    </h2>
-
-    <p>
-      Do not ignore serious or persistent symptoms. Seek appropriate medical
-      attention rather than relying on self-medication.
-    </p>
-
-    <div class="notice">
-
-      <strong>Public health reminder:</strong>
-
-      For current disease alerts and official public-health guidance in Nigeria,
-      follow information from the Nigeria Centre for Disease Control and
-      Prevention (NCDC) and qualified healthcare professionals.
-
-    </div>
-
-    <h2>
-      Conclusion
-    </h2>
-
-    <p>
-      Preventing infectious diseases does not belong to healthcare workers alone.
-      It begins with each of us.
-    </p>
-
-    <p>
-      By washing our hands regularly, practising good hygiene, keeping shared
-      environments clean, avoiding unnecessary exposure when we are sick and
-      following advice from health authorities, we can help protect ourselves
-      and the people around us.
-    </p>
-
-    <p>
-      <strong>
-        Prevention is everyone's responsibility.
-      </strong>
-    </p>
-
-    <div class="source-box">
-
-      <strong>
-        Sources and further information
-      </strong>
+      <h2>
+        Why Infection Prevention Matters
+      </h2>
 
       <p>
-        Nigeria Centre for Disease Control and Prevention (NCDC):
+        Infectious diseases can spread quickly when people live, study,
+        work or gather closely together. While healthcare workers and
+        public-health authorities play an important role in preventing
+        and controlling outbreaks, individuals and communities also
+        have an important part to play.
+      </p>
+
+      <p>
+        Good Infection Prevention and Control (IPC) practices can help
+        reduce the spread of infections and protect families, schools,
+        workplaces and communities.
+      </p>
+
+
+      <!-- =========================
+           HOW CAN WE REDUCE INFECTIONS?
+      ========================= -->
+
+      <h2>
+        How Can We Reduce the Spread of Infections?
+      </h2>
+
+      <p>
+        Everyone has a role to play in breaking the chain of transmission.
+        Simple everyday habits can make a significant difference.
+      </p>
+
+
+      <!-- =========================
+           HANDWASHING IMAGE
+      ========================= -->
+
+      <div class="article-image-box">
+
+        <img
+          class="article-image"
+          src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80"
+          alt="Handwashing with soap and water"
+          loading="lazy"
+        >
+
+        <div class="article-image-caption">
+          Regular handwashing with soap and clean water is one of the
+          simplest ways to reduce the spread of infection.
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           1. HANDWASHING
+      ========================= -->
+
+      <h3>
+        🧼 1. Wash Your Hands Regularly
+      </h3>
+
+      <p>
+        Wash your hands thoroughly with soap and clean running water,
+        especially before eating or preparing food, after using the
+        toilet and after contact with potentially contaminated materials.
+      </p>
+
+
+      <!-- =========================
+           2. RESPIRATORY HYGIENE
+      ========================= -->
+
+      <h3>
+        🤧 2. Practise Good Respiratory Hygiene
+      </h3>
+
+      <p>
+        Cover your mouth and nose when coughing or sneezing. Dispose of
+        used tissues properly and clean your hands afterwards.
+      </p>
+
+
+      <!-- RESPIRATORY HYGIENE IMAGE -->
+
+      <div class="article-image-box">
+
+        <img
+          class="article-image"
+          src="https://images.unsplash.com/photo-1584483766114-2cea6b3c9f8f?auto=format&fit=crop&w=1200&q=80"
+          alt="Person practising respiratory hygiene"
+          loading="lazy"
+        >
+
+        <div class="article-image-caption">
+          Cover your mouth and nose when coughing or sneezing to help
+          protect people around you.
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           3. AVOID CLOSE CONTACT
+      ========================= -->
+
+      <h3>
+        👥 3. Avoid Close Contact When You Are Sick
+      </h3>
+
+      <p>
+        If you develop symptoms of an infectious illness, avoid
+        unnecessarily exposing other people and seek appropriate
+        medical advice, particularly if symptoms are severe or
+        getting worse.
+      </p>
+
+
+      <!-- =========================
+           4. CLEAN SURFACES
+      ========================= -->
+
+      <h3>
+        🧽 4. Keep Frequently Touched Surfaces Clean
+      </h3>
+
+      <p>
+        Regularly clean and disinfect frequently touched surfaces such
+        as door handles, tables, phones, keyboards and other shared
+        items, especially in homes, schools and workplaces.
+      </p>
+
+
+      <!-- SURFACE CLEANING IMAGE -->
+
+      <div class="article-image-box">
+
+        <img
+          class="article-image"
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+          alt="Cleaning and disinfecting a surface"
+          loading="lazy"
+        >
+
+        <div class="article-image-caption">
+          Regular cleaning of frequently touched surfaces can help
+          maintain healthier shared environments.
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           5. PERSONAL ITEMS
+      ========================= -->
+
+      <h3>
+        🥤 5. Avoid Sharing Personal Items
+      </h3>
+
+      <p>
+        Where appropriate, avoid sharing personal-use items that may
+        come into contact with bodily fluids, such as towels and
+        similar items.
+      </p>
+
+
+      <!-- =========================
+           6. SCHOOLS AND WORKPLACES
+      ========================= -->
+
+      <h3>
+        🏫 6. Make Schools and Workplaces Part of the Solution
+      </h3>
+
+      <p>
+        Schools, offices and other shared environments should encourage
+        good hand hygiene, cleanliness and early reporting of illness.
+      </p>
+
+
+      <!-- COMMUNITY IMAGE -->
+
+      <div class="article-image-box">
+
+        <img
+  class="article-image"
+  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80"
+  alt="Person practising respiratory hygiene"
+  loading="lazy"
+>
+
+        <div class="article-image-caption">
+          Schools, workplaces and communities can work together to
+          promote healthier environments.
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           QUOTE
+      ========================= -->
+
+      <div class="quote">
+        Clean hands save lives.
+      </div>
+
+
+      <!-- =========================
+           RESPONSIBILITY
+      ========================= -->
+
+      <h2>
+        Infection Prevention Is Everyone's Responsibility
+      </h2>
+
+      <p>
+        Healthcare workers cannot prevent the spread of infectious
+        diseases alone. Families, teachers, students, workers,
+        religious communities, business owners and community leaders
+        all have a role to play.
+      </p>
+
+      <p>
+        Making good hygiene a daily habit can help create healthier
+        and safer communities.
+      </p>
+
+
+      <!-- =========================
+           WHEN YOU ARE UNWELL
+      ========================= -->
+
+      <h2>
+        When You Are Unwell
+      </h2>
+
+      <p>
+        Do not ignore serious or persistent symptoms. Seek appropriate
+        medical attention rather than relying on self-medication.
+      </p>
+
+
+      <!-- =========================
+           PUBLIC HEALTH NOTICE
+      ========================= -->
+
+      <div class="notice">
+
+        <strong>
+          Public health reminder:
+        </strong>
+
+        For current disease alerts and official public-health guidance
+        in Nigeria, follow information from the Nigeria Centre for
+        Disease Control and Prevention (NCDC) and qualified healthcare
+        professionals.
+
+      </div>
+            <!-- =========================
+           CONCLUSION
+      ========================= -->
+
+      <h2>
+        Conclusion
+      </h2>
+
+      <p>
+        Preventing infectious diseases does not belong to healthcare
+        workers alone. It begins with each of us.
+      </p>
+
+      <p>
+        By washing our hands regularly, practising good hygiene,
+        keeping shared environments clean, avoiding unnecessary
+        exposure when we are sick and following advice from health
+        authorities, we can help protect ourselves and the people
+        around us.
+      </p>
+
+      <p>
+        <strong>
+          Prevention is everyone's responsibility.
+        </strong>
+      </p>
+
+
+      <!-- =========================
+           SOURCES
+      ========================= -->
+
+      <div class="source-box">
+
+        <strong>
+          Sources and further information
+        </strong>
+
+        <p>
+          Nigeria Centre for Disease Control and Prevention (NCDC):
+          <a
+            href="https://www.ncdc.gov.ng/"
+            target="_blank"
+            rel="noopener"
+          >
+            Official website
+          </a>
+        </p>
+
+        <p>
+          This article is for general public-health education and is
+          not a substitute for professional medical advice.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         SHARE ARTICLE
+    ========================= -->
+
+    <div class="share-box">
+
+      <h3>
+        Share This Article
+      </h3>
+
+      <p>
+        Help someone else discover this useful information.
+      </p>
+
+      <div class="share-buttons">
+
         <a
-          href="https://www.ncdc.gov.ng/"
+          href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
           target="_blank"
           rel="noopener"
+          class="share-whatsapp"
         >
-          Official website
+          WhatsApp
         </a>
-      </p>
+
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+          target="_blank"
+          rel="noopener"
+          class="share-facebook"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
+          target="_blank"
+          rel="noopener"
+          class="share-x"
+        >
+          X
+        </a>
+
+        <button
+          type="button"
+          onclick="copyArticleLink()"
+          class="share-copy"
+        >
+          Copy Link
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================= -->
+
+    <section class="newsletter">
+
+      <h2>
+        Stay Connected
+      </h2>
 
       <p>
-        This article is for general public-health education and is not a
-        substitute for professional medical advice.
+        More stories, ideas and useful information are coming to
+        The Daily Lens.
       </p>
 
-    </div>
+      <form
+        action="https://formspree.io/f/mrpznjgw"
+        method="POST"
+      >
 
-  </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required
+        >
 
-  <!-- SHARE ARTICLE -->
+        <button type="submit">
+          Subscribe
+        </button>
 
-  <div class="share-box">
+      </form>
 
-    <h3>
-      Share This Article
-    </h3>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
 
     <p>
-      Help someone else discover this useful information.
+      © 2026 The Daily Lens. All rights reserved.
     </p>
 
-    <div class="share-buttons">
+  </footer>
 
-      <a
-        href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-        target="_blank"
-        rel="noopener"
-        class="share-whatsapp"
-      >
-        WhatsApp
-      </a>
 
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
-        target="_blank"
-        rel="noopener"
-        class="share-facebook"
-      >
-        Facebook
-      </a>
-
-      <a
-        href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
-        target="_blank"
-        rel="noopener"
-        class="share-x"
-      >
-        X
-      </a>
-
-      <button
-        type="button"
-        onclick="copyArticleLink()"
-        class="share-copy"
-      >
-        Copy Link
-      </button>
-
-    </div>
-
-  </div>
-
-  <!-- COPY LINK SCRIPT -->
+  <!-- =========================
+       COPY LINK SCRIPT
+  ========================= -->
 
   <script>
 
@@ -854,58 +1284,218 @@
       const articleLink =
         "https://jimohquadrikayode.github.io/the-daily-lens/health-infection-prevention.html";
 
-      navigator.clipboard.writeText(articleLink).then(function() {
+      navigator.clipboard.writeText(articleLink)
+        .then(function() {
 
-        alert("Article link copied successfully!");
+          alert("Article link copied successfully!");
 
-      });
+        })
+        .catch(function() {
+
+          alert("Unable to copy the link. Please copy it manually.");
+
+        });
 
     }
 
   </script>
 
-  <!-- NEWSLETTER -->
+</body>
 
-  <section class="newsletter">
+          </html>
+            <!-- =========================
+           CONCLUSION
+      ========================= -->
 
-    <h2>
-      Stay Connected
-    </h2>
+      <h2>
+        Conclusion
+      </h2>
 
-    <p>
-      More stories, ideas and useful information are coming to The Daily Lens.
-    </p>
+      <p>
+        Preventing infectious diseases does not belong to healthcare
+        workers alone. It begins with each of us.
+      </p>
 
-    <form
-      action="https://formspree.io/f/mrpznjgw"
-      method="POST"
-    >
+      <p>
+        By washing our hands regularly, practising good hygiene,
+        keeping shared environments clean, avoiding unnecessary
+        exposure when we are sick and following advice from health
+        authorities, we can help protect ourselves and the people
+        around us.
+      </p>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email address"
-        aria-label="Email address"
-        required
+      <p>
+        <strong>
+          Prevention is everyone's responsibility.
+        </strong>
+      </p>
+
+
+      <!-- =========================
+           SOURCES
+      ========================= -->
+
+      <div class="source-box">
+
+        <strong>
+          Sources and further information
+        </strong>
+
+        <p>
+          Nigeria Centre for Disease Control and Prevention (NCDC):
+          <a
+            href="https://www.ncdc.gov.ng/"
+            target="_blank"
+            rel="noopener"
+          >
+            Official website
+          </a>
+        </p>
+
+        <p>
+          This article is for general public-health education and is
+          not a substitute for professional medical advice.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         SHARE ARTICLE
+    ========================= -->
+
+    <div class="share-box">
+
+      <h3>
+        Share This Article
+      </h3>
+
+      <p>
+        Help someone else discover this useful information.
+      </p>
+
+      <div class="share-buttons">
+
+        <a
+          href="https://wa.me/?text=Read%20this%20article%20from%20The%20Daily%20Lens%3A%20https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+          target="_blank"
+          rel="noopener"
+          class="share-whatsapp"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html"
+          target="_blank"
+          rel="noopener"
+          class="share-facebook"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimohquadrikayode.github.io%2Fthe-daily-lens%2Fhealth-infection-prevention.html&text=Infection%20Prevention%20Starts%20With%20You"
+          target="_blank"
+          rel="noopener"
+          class="share-x"
+        >
+          X
+        </a>
+
+        <button
+          type="button"
+          onclick="copyArticleLink()"
+          class="share-copy"
+        >
+          Copy Link
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================= -->
+
+    <section class="newsletter">
+
+      <h2>
+        Stay Connected
+      </h2>
+
+      <p>
+        More stories, ideas and useful information are coming to
+        The Daily Lens.
+      </p>
+
+      <form
+        action="https://formspree.io/f/mrpznjgw"
+        method="POST"
       >
 
-      <button type="submit">
-        Subscribe
-      </button>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required
+        >
 
-    </form>
+        <button type="submit">
+          Subscribe
+        </button>
 
-  </section>
+      </form>
 
-</main>
+    </section>
 
-<footer>
+  </main>
 
-  <p>
-    © 2026 The Daily Lens. All rights reserved.
-  </p>
 
-</footer>
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <p>
+      © 2026 The Daily Lens. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       COPY LINK SCRIPT
+  ========================= -->
+
+  <script>
+
+    function copyArticleLink() {
+
+      const articleLink =
+        "https://jimohquadrikayode.github.io/the-daily-lens/health-infection-prevention.html";
+
+      navigator.clipboard.writeText(articleLink)
+        .then(function() {
+
+          alert("Article link copied successfully!");
+
+        })
+        .catch(function() {
+
+          alert("Unable to copy the link. Please copy it manually.");
+
+        });
+
+    }
+
+  </script>
 
 </body>
 
